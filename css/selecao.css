@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-rows: 8rem 1fr 6rem;
+}
+
+header {
+    grid-area: header;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Inicio da parte Main */
+
+main {
+    grid-area: main;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.select {
+    width: 23%;
+    background-color: brown;
+    outline: 1px solid black;
+}
+
+.choice {
+    width: 54%;
+    background-color: chartreuse;
+    display: grid;
+    grid-template-areas:
+    "per1 per2"
+    "per3 per4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.per1 {
+    grid-area: per1;
+    background-color: gold;
+}
+
+.per2 {
+    grid-area: per2;
+    background-color: silver;
+}
+
+.per3 {
+    grid-area: per3;
+    background-color: rebeccapurple;
+}
+
+.per4 {
+    grid-area: per4;
+    background-color: blue;
+}
+
+.enemy { 
+    width: 23%;
+    background-color: violet;
+}
+
+/* Fim da parte Main */
+
+footer {
+    grid-area: footer;
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
