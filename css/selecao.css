@@ -44,19 +44,25 @@ main {
     "per1 per2"
     "cen cen";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15rem 1fr;
+    grid-template-rows: 18rem 1fr;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 .per1 {
     grid-area: per1;
     background-color: black;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
 }
 
 .per2 {
     grid-area: per2;
     background-color: black;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
 }
 
 .cen {
