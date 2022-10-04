@@ -7,82 +7,81 @@
 body {
     width: 100vw;
     height: 100vh;
+    
+}
+
+form {
+    width: 100%;
+    height: 100%;
     margin: auto;
     display: grid;
     grid-template-areas:
-    "header header header"
     "main main main"
     "footer footer footer";
     grid-template-columns: 10rem 1fr 10rem;
-    grid-template-rows: 8rem 1fr 6rem;
-}
-
-header {
-    grid-area: header;
-    background-color: aquamarine;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    grid-template-rows: 1fr 1fr;
 }
 
 /* Inicio da parte Main */
 
 main {
     grid-area: main;
-    background-color: blueviolet;
+    background-color: chartreuse;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .select {
+    display: flex;
+    align-items: center;
     width: 23%;
-    background-color: brown;
+    background-color: black;
     outline: 1px solid black;
 }
 
 .choice {
     width: 54%;
-    background-color: chartreuse;
+    background-color: black;
     display: grid;
     grid-template-areas:
     "per1 per2"
-    "per3 per4";
+    "cen cen";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 14rem 1fr;
 }
 
 .per1 {
     grid-area: per1;
-    background-color: gold;
+    background-color: black;
+    border: 3px solid transparent;
 }
 
 .per2 {
     grid-area: per2;
-    background-color: silver;
+    background-color: black;
+    border: 3px solid transparent;
 }
 
-.per3 {
-    grid-area: per3;
-    background-color: rebeccapurple;
-}
-
-.per4 {
-    grid-area: per4;
-    background-color: blue;
+.cen {
+    grid-area: cen;
+    background-color: black;
 }
 
 .enemy { 
+    display: flex;
+    align-items: center;
     width: 23%;
-    background-color: violet;
+    background-color: black;
 }
 
 /* Fim da parte Main */
 
 footer {
+    width: 100%;
+    height: 3rem;
+    bottom: 0;
+    position: fixed;
     grid-area: footer;
     background-color: yellow;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
 }

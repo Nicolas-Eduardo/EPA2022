@@ -9,6 +9,12 @@ body {
     height: 100vh;
     background-image: url("image/space1.jpg");
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-
+a {
+    text-decoration: none;
+    color: white;
+}
