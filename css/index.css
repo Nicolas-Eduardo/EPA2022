@@ -1,20 +1,85 @@
+@font-face {
+    font-family: pressStart;
+    src: url('Fonte/press_start/PrStart.ttf') format('opentype'), url('Fonte/press_start/prstartk.ttf')format('embedded-opentype');
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'pressStart';
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url("image/space1.jpg");
+    background-image: url('image/spaceOficial.gif');
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main img {
+    width: 35rem;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 5rem;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.third {
+    border-color: #420D2C;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #420D2C inset, 0 0 0 0 #420D2C;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.third:hover {
+    box-shadow: 0 0 10px 0 #420D2C inset, 0 0 10px 4px #420D2C;
 }
