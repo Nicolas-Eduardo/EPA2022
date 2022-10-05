@@ -16,6 +16,10 @@ form {
     justify-content: center;
 }
 
+input {
+    opacity: 0;
+}
+
 /* Inicio da parte Main */
 
 main {
