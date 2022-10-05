@@ -4,6 +4,8 @@ const select = document.querySelector('.select');
 const enemy = document.querySelector('.enemy');
 const carrossel = document.querySelector('.carrossel');
 const controles = document.querySelector('.controles');
+const btnComecar = document.querySelector('button');
+const footer = document.querySelector('footer');
 let verificador = false;
 
 per1.addEventListener("click", function(){
@@ -27,4 +29,13 @@ carrossel.addEventListener("click", function(){
     $('.carousel').carousel({
         interval: 0
     });
+})
+
+// Parte improvisada do botão // 
+btnComecar.addEventListener("mouseenter", function(){
+    footer.style.backgroundColor = "black";
+})
+
+btnComecar.addEventListener("mouseleave", function(){
+    footer.style.backgroundColor = "yellow";
 })
