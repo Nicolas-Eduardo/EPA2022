@@ -18,6 +18,7 @@
         <a href="selecao.php"><button class="btn third">START</button></a>
     </main>
 
+    <audio src="files/abertura.mp3" autoplay></audio>
 
 </body>
 
