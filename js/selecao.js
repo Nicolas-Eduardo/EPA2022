@@ -33,9 +33,9 @@ carrossel.addEventListener("click", function(){
 
 // Parte improvisada do botão // 
 btnComecar.addEventListener("mouseenter", function(){
-    footer.style.backgroundColor = "black";
+    footer.style.backgroundColor = "transparent";
 })
 
 btnComecar.addEventListener("mouseleave", function(){
-    footer.style.backgroundColor = "yellow";
+    footer.style.backgroundColor = "#5555FF";
 })
