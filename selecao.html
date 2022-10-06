@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/selecao.css">
+    <script src="js/selecao.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção</title>
+</head>
+
+<body>
+    <form action="game.html" method="get">
+
+        <!-- Siglas Usadas:
+    select = personagem selecionado pelo usuario.
+    choice = local onde o usuario escolhe um personagem. 
+    enemy = inimigo pré definido.
+    cen = cenario.
+    -->
+
+        <main>
+            <div class="select">
+                <img src="css/image/interrogation_white.gif" alt="" width="50%" height="50%">
+            </div>
+
+            <div class="choice">
+                <label for="per1" class="per1">
+                    <div><img src="css/image/pteste1.png" alt="" width="100%" height="100%"></div>
+                </label>
+
+                <label for="per2" class="per2">
+                    <div><img src="css/image/pteste2.webp" alt="" width="100%" height="100%"></div>
+                </label>
+
+                <div class="cen">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                        <div class="carousel-inner carrossel">
+                            <div class="carousel-item active">
+                                <label for="cenario1">
+                                    <img class="d-block w-100 " src="css/image/cenario1.gif" alt="Primeiro Slide"
+                                        width="100%" height="100%">
+                                </label>
+                            </div>
+                            <div class="carousel-item">
+                                <label for="cenario2">
+                                    <img class="d-block w-100" src="css/image/cenario2.gif" alt="Segundo Slide"
+                                        width="100%" height="100%">
+                                </label>
+                            </div>
+                            <div class="carousel-item">
+                                <label for="cenario3">
+                                    <img class="d-block w-100" src="css/image/cenario3.gif" alt="Terceiro Slide"
+                                        width="100%" height="100%">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="controles">
+                            <a class="carousel-control-prev" href="#carouselExampleFade" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleFade" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="enemy">
+                <img src="css/image/interrogation_white.gif" alt="" width="50%" height="50%">
+            </div>
+        </main>
+
+        <footer>
+            <button type="submit">
+                <div class="box-1">
+                    <div class="btn btn-one">
+                        <span>FIGHT</span>
+                    </div>
+                </div>
+            </button>
+            <div class="inputs">
+                <input type="radio" id="per1" name="per" value="per1">
+                <input type="radio" id="per2" name="per" value="per2">
+                <input type="radio" id="cenario1" name="cenario" value="cenario1">
+                <input type="radio" id="cenario2" name="cenario" value="cenario2">
+                <input type="radio" id="cenario3" name="cenario" value="cenario3">
+            </div>
+            
+        </footer>
+    </form>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>
