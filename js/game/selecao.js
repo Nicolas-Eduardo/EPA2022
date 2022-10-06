@@ -1,8 +1,14 @@
 const body = document.querySelector('body');
 
-console.log(partes)
+body.style.backgroundColor = 'Black';
 
-if (data.cenario == "cenario1") {
-    body.style.backgroundImage = "url('css/image/cenario1.gif')";
-    body.style.backgroundSize = "cover";
-};
+// if (data.cenario == "cenario1") {
+//     body.style.backgroundImage = "url('css/image/cenario1.gif')";
+// };
+setInterval(function(){
+    setTimeOut(body.style.backgroundImage = "url('css/image/cenario1.gif')", 500);
+},4000);
+
+
+
+

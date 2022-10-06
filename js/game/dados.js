@@ -10,6 +10,6 @@ partes.forEach(function (parte) {
 
 console.log(data); // Object {lang: "pt", page: "home"}
 
-if (partes.length != 2) {
-    window.location.href = "selecao.php";
-}
+// if (partes.length != 2) {
+//     window.location.href = "selecao.php";
+// }
