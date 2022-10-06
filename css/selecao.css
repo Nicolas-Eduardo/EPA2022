@@ -1,12 +1,21 @@
+@font-face {
+    font-family: pressStart;
+    src: url('Fonte/press_start/PrStart.ttf') format('opentype'), url('Fonte/press_start/prstartk.ttf')format('embedded-opentype');
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'pressStart';
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-image: url('image/spaceSelect.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 form {
@@ -36,8 +45,8 @@ main {
     align-items: center;
     width: 25%;
     height: 100%;
-    background-color: black;
-    outline: 1px solid black;
+    /* background-color: black; */
+    /* outline: 1px solid black; */
 }
 
 .choice {
@@ -59,19 +68,19 @@ label {
 
 .per1 {
     grid-area: per1;
-    background-color: black;
+    /* background-color: black; */
     border: 5px solid transparent;
 }
 
 .per2 {
     grid-area: per2;
-    background-color: black;
+    /* background-color: black; */
     border: 5px solid transparent;
 }
 
 .cen {
     grid-area: cen;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .enemy { 
@@ -80,28 +89,37 @@ label {
     align-items: center;
     width: 25%;
     height: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 /* Fim da parte Main */
 
 footer {
     width: 100vw;
-    height: 3rem;
+    height: 7rem;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: fixed;
-    background-color: yellow;
+    background-color: #5555FF;
+    transition: all 0.4s;
 }
 
 /* Botão Start */
 
 button {
-    width: 250px;
+    width: 50rem;
+    height: 25rem;
     border-style: none;
 }
 
+span {
+    font-size: xx-large;
+}
+
 div[class*=box] {
-	height: 33%;
+	height: 100%;
 	width: 100%; 
     display: flex;
     justify-content: center;
@@ -109,15 +127,15 @@ div[class*=box] {
 }
 
 .box-1 { 
-    background-color: #FF6766; 
+    background-color: #5555FF; 
     margin: 0;
 }
 
 .btn {
-	line-height: 50px;
-	height: 50px;
+	line-height: 100px;
+	height: 120px;
 	text-align: center;
-	width: 250px;
+	width: 900px;
 	cursor: pointer;
 }
 
@@ -163,7 +181,6 @@ div[class*=box] {
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
-	background-color: rgba(255,255,255,0.1);
 }
 .btn-one:hover::after {
 	opacity: 0;	
