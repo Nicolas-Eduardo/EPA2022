@@ -4,7 +4,7 @@ const body = document.querySelector('body');
 //     body.style.backgroundImage = "url('css/image/cenario1.gif')";
 // };
 
-body.style.backgroundImage = "url('css/image/cenario1.gif')";
+body.style.backgroundImage = "url('css/image/cenario4.gif')";
 
 
 
