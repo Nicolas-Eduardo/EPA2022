@@ -8,8 +8,6 @@ partes.forEach(function (parte) {
     data[chave] = valor;
 });
 
-console.log(data); // Object {lang: "pt", page: "home"}
-
-// if (partes.length != 2) {
-//     window.location.href = "selecao.php";
-// }
+if (partes.length != 2) {
+    window.location.href = "selecao.html";
+}

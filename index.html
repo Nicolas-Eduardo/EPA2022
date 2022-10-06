@@ -15,10 +15,21 @@
         <img src="css/image/logo.svg" alt="#">
 
         <a href="selecao.html"><button class="btn third">START</button></a>
+
+        <button id="button">►</button>
     </main>
 
-    <audio src="files/abertura.mp3" autoplay></audio>
+    <audio src="files/abertura.mp3" id="audio"></audio>
 
 </body>
+<script>
+    
+    const audio = document.getElementById('audio');
+    const btn = document.querySelector('#button');
+
+    btn.addEventListener("click", function () {
+        audio.play();
+    })
+</script>
 
 </html>

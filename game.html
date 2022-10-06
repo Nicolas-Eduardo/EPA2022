@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/importacoes.css">
     <link rel="stylesheet" href="css/game.css">
     <script src="js/game/dados.js" defer></script>
     <script src="js/game/selecao.js" defer></script>
@@ -15,7 +16,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="alert">
+            <div class="alert fade-in-top fade-out-top">
                 <p>SEU INIMIGO DESVIOU!</p>
             </div>
         </header>
@@ -23,8 +24,8 @@
 <!-- Inicio do Main -->
 
         <main>
-            <div class="p1"><img src="css/image/fteste1.png" alt=""></div>
-            <div class="p2"><img src="css/image/fteste2.png" alt=""></div>
+            <div class="p1"><img src="" alt="personagem 1" id="imgPer1"></div>
+            <div class="p2"><img src="" alt="personagem 2" id="imgPer2"></div>
         </main>
 
 <!-- Inicio do Footer -->
@@ -32,11 +33,11 @@
         <footer>
             <div id="you">
                 <div class="per1">
-                    <img src="css/image/pteste1.png" alt="">
+                    <img src="" alt="" id="reacaoPer1">
                 </div>
                 <div class="vida1">
                     <div class="w3-light-grey w3-round-xlarge bar">
-                        <div class="w3-container w3-blue w3-round-xlarge bar1" style="width:25%">25%</div>
+                        <div class="w3-container w3-red w3-round-xlarge bar1" style="width:25%">25%</div>
                     </div>
                 </div>
                 <div class="ult1">
@@ -46,19 +47,38 @@
                     <button class="w3-button w3-medium w3-circle w3-black">🧨</button>
                 </div>
             </div>
+
             <div id="select">
-                <div class="op1"></div>
-                <div class="op2"></div>
-                <div class="op3"></div>
-                <div class="op4"></div>
+                <div class="op1">
+                    <div class="attack"><P>CHOQUE DO TROVÃO</P></div>
+                    <div class="damage">125DMG</div>
+                </div>
+                <div class="op2">
+                    <div class="attack"><P>ESFERA ELÉTRICA</P></div>
+                    <div class="damage">125DMG</div>
+                </div>
+                <div class="op3">
+                    <div class="attack"><P>INVESTIDA TROVÃO</P></div>
+                    <div class="damage">125DMG</div>
+                </div>
+                <div class="op4">
+                    <div class="attack"><P>ONDA TROVÃO</P></div>
+                    <div class="damage">125DMG</div>
+                </div>
+
+                <!-- <div class="inative">
+                    <p>AGUARDE</p>
+                </div> -->
+
             </div>
+
             <div id="he">
                 <div class="per2">
-                    <img src="css/image/pteste2.webp" alt="">
+                    <img src="" alt="" id="reacaoPer2">
                 </div>
                 <div class="vida2">
                     <div class="w3-light-grey w3-round-xlarge bar">
-                        <div class="w3-container w3-blue w3-round-xlarge bar1" style="width:71%">25%</div>
+                        <div class="w3-container w3-green w3-round-xlarge bar1" style="width:71%">71%</div>
                     </div>
                 </div>
                 <div class="ult2">
