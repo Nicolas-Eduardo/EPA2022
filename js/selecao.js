@@ -6,14 +6,16 @@ const carrossel = document.querySelector('.carrossel');
 const controles = document.querySelector('.controles');
 const btnComecar = document.querySelector('button');
 const footer = document.querySelector('footer');
+const audio = document.querySelector('#audio');
 let verificador = false;
 
 per1.addEventListener("click", function(){
     verificador = true;
     select.innerHTML = '<img src="css/image/fteste1.png" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="100%"></img>';
     enemy.innerHTML = '<img src="css/image/fteste2.png" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="100%"></img>';
-    per1.style.border = '5px groove #5555FF'
-    per2.style.border = ''
+    per1.style.border = '5px groove #5555FF';
+    per2.style.border = '';
+    audio.play();
 })
 
 per2.addEventListener("click", function(){

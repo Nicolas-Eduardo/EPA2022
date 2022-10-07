@@ -61,7 +61,7 @@ function ative() {
     select.style.gridTemplateRows = '1fr 1fr';
     select.style.gridTemplateColumns = '1fr 1fr';
     select.innerHTML = `
-    <div class="op1">
+                <div class="op1">
                     <div class="attack"><span id="g1"><span>${golpe1}</span></div>
                     <div class="damage"><span id="d1"><span>${dano1}DMG</span></div>
                 </div>
@@ -76,8 +76,9 @@ function ative() {
                 <div class="op4">
                     <div class="attack"><span id="g4"><span>${golpe4}</span></div>
                     <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
-                </div>`
+                </div>
+                `
 }
 
-inative();
 ative();
+inative();

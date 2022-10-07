@@ -1,0 +1,55 @@
+Inserindo algo:
+
+	$('.ps1').click(
+            function () {
+                if (localStorage.dados) {
+                    carrinhodados = JSON.parse(localStorage.getItem('dados'))
+                    preco = parseInt(JSON.parse(localStorage.getItem('preco')))
+                }
+
+                caixa = '<div class="js col-sm-4 col-12"><div class="row d-flex"><div class="col-4"><img src="assets/imagesps/cards/gta5-card.webp" alt="jogo" class="img-fluid"></div><div class="col-8 justify-content-center align-items-center d-flex flex-column"><h5>GTA 5</h5><h5>PS4</h5><h6>R$119,00</h6></div></div></div>'
+                carrinhodados.push(caixa)
+                localStorage.dados = JSON.stringify(carrinhodados)
+                preco += 119
+                localStorage.preco = (preco)
+            }
+        )
+________________________________________________
+
+Mostrando:
+
+Caso exista:
+
+	if (localStorage.dados && localStorage.preco) {
+            carrinhodados = JSON.parse(localStorage.getItem('dados'))
+            preco = parseInt(JSON.parse(localStorage.preco))
+            btncompras = '<button type="button" class="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#compras">Confirmar compras</button>'
+            $('#btncompras').html(btncompras)
+            $('.inserir').html(carrinhodados)
+            $('.inserir-compras').html('O seu total de compras foi de R$' + preco + ',00' + dados)
+
+_________________________________________________
+
+Limpando localStorage:
+
+	localStorage.clear(dados)
+        localStorage.clear(preco)
+_________________________________________________
+
+Ordenando array em valores:
+
+    AJUDAS.sort(function (x, y) {
+        return y.valor - x.valor;
+    })
+
+_________________________________________________
+
+Cronometro de tempo:
+
+var cronometro = 0;
+
+setInterval(function() {
+	cronometro++;
+}, 1000);
+
+_________________________________________________
