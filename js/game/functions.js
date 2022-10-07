@@ -46,6 +46,14 @@ const d2 = document.getElementById('d2');
 const d3 = document.getElementById('d3');
 const d4 = document.getElementById('d4');
 
+// audio
+
+btn1.addEventListener('click', function(){
+    audio.play();
+})
+
+// audio
+
 function inative() {
     select.style.gridTemplateAreas = '"inative"';
     select.style.gridTemplateRows = '1fr';

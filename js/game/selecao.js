@@ -4,6 +4,7 @@ const imgPer2 = document.getElementById('imgPer2');
 const reacaoPer1 = document.getElementById('reacaoPer1');
 const reacaoPer2 = document.getElementById('reacaoPer2');
 var x = 1;
+const audio = document.getElementById('audio');
 
 if (data.per == "per1") {
     imgPer1.setAttribute("src", "css/image/fteste1.png")
@@ -50,12 +51,15 @@ else {
 
 if (data.cenario == "cenario1") {
     body.style.backgroundImage = "url('css/image/cenario1.gif')";
+    audio.setAttribute('src', 'files/Arctic.mp3');
 }
 else if (data.cenario == "cenario2") {
     body.style.backgroundImage = "url('css/image/cenario2.gif')";
+    audio.setAttribute('src', 'files/Airport.mp3');
 }
 else {
     body.style.backgroundImage = "url('css/image/cenario4_1.gif')";
+    audio.setAttribute('src', 'files/Space Ship.mp3');
 
     setInterval(function(){
         body.style.backgroundImage = "url('css/image/cenario4_2.gif')";
