@@ -1,3 +1,5 @@
+
+
 var query = location.search.slice(1);
 var partes = query.split('&');
 var data = {};
@@ -11,3 +13,78 @@ partes.forEach(function (parte) {
 if (partes.length != 2) {
     window.location.href = "selecao.html";
 }
+
+
+
+// Dados jogador 1
+
+vida1 = {
+    vida: 1956
+}
+
+golpe1_1 = {
+    ataque: "Machadada Letal",
+    damage: 178
+}
+
+golpe1_2 = {
+    ataque: "Mordida",
+    damage: 68
+}
+
+golpe1_3 = {
+    ataque: "Corte Aéreo",
+    damage: 145
+}
+
+golpe1_4 = {
+    ataque: "Cabeçada",
+    damage: 98
+}
+
+ult1 = {
+    ataque: "Ta pegando fogo bicho",
+    damage: 254
+}
+
+// Dados jogador 2
+
+vida2 = {
+    vida: 1346
+}
+
+golpe2_1 = {
+    ataque: "Neuralaser",
+    damage: 197
+}
+
+golpe2_2 = {
+    ataque: "Chuva de Tiros",
+    damage: 236
+}
+
+golpe2_3 = {
+    ataque: "Mr.Time",
+    damage: 140
+}
+
+golpe2_4 = {
+    ataque: "Cartola Giratoria",
+    damage: 172
+}
+
+ult2 = {
+    ataque: "Hasta la vista, baby",
+    damage: 418
+}
+
+// Array de objetos dos golpe do jogador 1
+
+const magnusDraco = [vida1, golpe1_1, golpe1_2, golpe1_3, golpe1_4, ult1];
+
+// Array de objetos dos golpe do jogador 2
+
+const mrMartino = [vida2, golpe2_1, golpe2_2, golpe2_3, golpe2_4, ult2];
+
+console.log(magnusDraco);
+console.log(mrMartino);

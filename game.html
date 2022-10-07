@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/game.css">
     <script src="js/game/dados.js" defer></script>
     <script src="js/game/selecao.js" defer></script>
+    <script src="js/game/functions.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +17,8 @@
 <body>
     <div class="container">
         <header>
-            <div class="alert fade-in-top fade-out-top">
-                <p>SEU INIMIGO DESVIOU!</p>
+            <div class="alert fade-in-top ">
+                <p id="message">SEU INIMIGO DESVIOU!</p>
             </div>
         </header>
 
@@ -37,39 +38,18 @@
                 </div>
                 <div class="vida1">
                     <div class="w3-light-grey w3-round-xlarge bar">
-                        <div class="w3-container w3-red w3-round-xlarge bar1" style="width:25%">25%</div>
+                        <div class="w3-container w3-red w3-round-xlarge bar1" style="width:25%"><span id="life1">2145HP</span></div>
                     </div>
                 </div>
                 <div class="ult1">
                     <div class="w3-light-grey w3-round">
-                        <div class="w3-container w3-orange w3-round" style="width:25%">POWER</div>
+                        <div class="w3-container w3-orange w3-round power1" style="width:25%">POWER</div>
                     </div>
-                    <button class="w3-button w3-medium w3-circle w3-black">🧨</button>
+                    <button class="w3-button w3-medium w3-circle w3-black btn1">🧨</button>
                 </div>
             </div>
 
             <div id="select">
-                <div class="op1">
-                    <div class="attack"><P>CHOQUE DO TROVÃO</P></div>
-                    <div class="damage">125DMG</div>
-                </div>
-                <div class="op2">
-                    <div class="attack"><P>ESFERA ELÉTRICA</P></div>
-                    <div class="damage">125DMG</div>
-                </div>
-                <div class="op3">
-                    <div class="attack"><P>INVESTIDA TROVÃO</P></div>
-                    <div class="damage">125DMG</div>
-                </div>
-                <div class="op4">
-                    <div class="attack"><P>ONDA TROVÃO</P></div>
-                    <div class="damage">125DMG</div>
-                </div>
-
-                <!-- <div class="inative">
-                    <p>AGUARDE</p>
-                </div> -->
-
             </div>
 
             <div id="he">
@@ -78,14 +58,14 @@
                 </div>
                 <div class="vida2">
                     <div class="w3-light-grey w3-round-xlarge bar">
-                        <div class="w3-container w3-green w3-round-xlarge bar1" style="width:71%">71%</div>
+                        <div class="w3-container w3-green w3-round-xlarge bar2" style="width:71%"><span id="life2">2145HP</span></div>
                     </div>
                 </div>
                 <div class="ult2">
                     <div class="w3-light-grey w3-round">
-                        <div class="w3-container w3-orange w3-round" style="width:25%">POWER</div>
+                        <div class="w3-container w3-orange w3-round power2" style="width:25%">POWER</div>
                     </div>
-                    <button class="w3-button w3-medium w3-circle w3-black">🧨</button>
+                    <button class="w3-button w3-medium w3-circle w3-black btn2">🧨</button>
                 </div>
             </div>
         </footer>
