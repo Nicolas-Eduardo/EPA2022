@@ -51,7 +51,7 @@ else {
 
 if (data.cenario == "cenario1") {
     body.style.backgroundImage = "url('css/image/cenario1.gif')";
-    audio.setAttribute('src', 'files/Arctic.mp3');
+    audio.setAttribute('src', 'files/Desert.mp3');
 }
 else if (data.cenario == "cenario2") {
     body.style.backgroundImage = "url('css/image/cenario2.gif')";
