@@ -7,11 +7,11 @@ var x = 1;
 const audio = document.getElementById('audio');
 
 if (data.per == "per1") {
-    imgPer1.setAttribute("src", "css/image/fteste1.png")
-    imgPer2.setAttribute("src", "css/image/fteste2.png")
+    imgPer1.setAttribute("src", "css/image/patoFrente.gif")
+    imgPer2.setAttribute("src", "css/image/patoCosta.gif")
 
-    reacaoPer1.setAttribute("src", "css/image/pteste1.webp")
-    reacaoPer2.setAttribute("src", "css/image/pteste2.png")
+    reacaoPer1.setAttribute("src", "css/image/patoFrente.gif")
+    reacaoPer2.setAttribute("src", "css/image/patoCosta.gif")
 
     var nomeYou = magnusDraco[0].nome;
     var nomeHe = mrMartino[0].nome;
@@ -35,10 +35,10 @@ if (data.per == "per1") {
     console.log(vida2)
 }
 else {
-    imgPer1.setAttribute("src", "css/image/fteste2.png")
-    imgPer2.setAttribute("src", "css/image/fteste1.png")
-    reacaoPer2.setAttribute("src", "css/image/pteste1.webp")
-    reacaoPer1.setAttribute("src", "css/image/pteste2.png")
+    imgPer1.setAttribute("src", "css/image/patoCosta.gif")
+    imgPer2.setAttribute("src", "css/image/patoFrente.gif")
+    reacaoPer2.setAttribute("src", "css/image/patoFrente.gif")
+    reacaoPer1.setAttribute("src", "css/image/patoCosta.gif")
 
     var vida1 = mrMartino[0].vida;
     var vida2 = magnusDraco[0].vida;
