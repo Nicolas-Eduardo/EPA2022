@@ -6,6 +6,8 @@ const reacaoPer2 = document.getElementById('reacaoPer2');
 var x = 1;
 const audio = document.getElementById('audio');
 
+// Caso Selecione o personagem 1
+
 if (data.per == "per1") {
     imgPer1.setAttribute("src", "css/image/patoFrente.gif")
     imgPer2.setAttribute("src", "css/image/patoCosta.gif")
@@ -34,6 +36,9 @@ if (data.per == "per1") {
     console.log(vida1)
     console.log(vida2)
 }
+
+// Caso Selecione o personagem 2
+
 else {
     imgPer1.setAttribute("src", "css/image/patoCosta.gif")
     imgPer2.setAttribute("src", "css/image/patoFrente.gif")
