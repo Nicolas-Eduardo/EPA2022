@@ -16,7 +16,7 @@ if (partes.length != 2) {
 
 
 
-// Dados jogador 1
+// Dados jogador 1 (Dino)
 
 dados1 = {
     nome: "Magnus Draco",
@@ -48,7 +48,7 @@ ult1 = {
     damage: 254
 }
 
-// Dados jogador 2
+// Dados jogador 2 (Pato)
 
 dados2 = {
     nome: "Mr. Martino",
