@@ -32,7 +32,7 @@ header {
     align-items: flex-start;
 }
 
-.alert {
+.alerta {
     margin-top: 1rem;
     background-color: #a197a1;
     width: 95%;
@@ -41,6 +41,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0;
 }
 
 .fade-in-top {
@@ -50,7 +51,7 @@ header {
 
 .fade-out-top {
 	-webkit-animation: fade-out-top 0.4s ease-in both;
-	        animation: fade-out-top 0.4s ease-in both;
+	animation: fade-out-top 0.4s ease-in both;
 }
 
 main {

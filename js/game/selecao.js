@@ -13,7 +13,12 @@ if (data.per == "per1") {
     reacaoPer1.setAttribute("src", "css/image/pteste1.webp")
     reacaoPer2.setAttribute("src", "css/image/pteste2.png")
 
-    var vida = magnusDraco[0];
+    var nomeYou = magnusDraco[0].nome;
+    var nomeHe = mrMartino[0].nome;
+    var vida1 = magnusDraco[0].vida;
+    var vida2 = mrMartino[0].vida;
+    var vidatotal1 = magnusDraco[0].vida;
+    var vidatotal2 = mrMartino[0].vida;
     
     var golpe1 = magnusDraco[1].ataque;
     var golpe2 = magnusDraco[2].ataque;
@@ -26,7 +31,8 @@ if (data.per == "per1") {
     var dano3= magnusDraco[3].damage;
     var dano4 = magnusDraco[4].damage;
     var ult2 = magnusDraco[5].damage;
-    console.log(golpe1)
+    console.log(vida1)
+    console.log(vida2)
 }
 else {
     imgPer1.setAttribute("src", "css/image/fteste2.png")
@@ -34,7 +40,12 @@ else {
     reacaoPer2.setAttribute("src", "css/image/pteste1.webp")
     reacaoPer1.setAttribute("src", "css/image/pteste2.png")
 
-    var vida = mrMartino[0];
+    var vida1 = mrMartino[0].vida;
+    var vida2 = magnusDraco[0].vida;
+    var vidatotal1 = mrMartino[0].vida;
+    var vidatotal2 = magnusDraco[0].vida;
+    var nomeYou = mrMartino[0].nome;
+    var nomeHe = magnusDraco[0].nome;
     
     var golpe1 = mrMartino[1].ataque;
     var golpe2 = mrMartino[2].ataque;
@@ -69,6 +80,13 @@ else {
         }, 30000)
     }, 30000)
 };
+
+// Objeto de falas
+
+const falas = {
+    fala1: `${nomeHe} desviou`,
+    fala2: `${nomeYou} usou ${golpe1}`
+}
 
 
 

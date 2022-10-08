@@ -1,8 +1,12 @@
+// 
+
+var porcentagem;
+
 // Div do select
 const select = document.getElementById('select')
 
 // Element.classList.remove(.classe);
-const alert = document.querySelector('.alert');
+const alerta = document.querySelector('.alerta');
 const message = document.getElementById('message');
 
 // Barra de Vida
@@ -12,8 +16,8 @@ const bar2 = document.querySelector('.bar2');
 
 // Qtd de Vida
 
-const life1 = document.querySelector('.life1');
-const life2 = document.querySelector('.life2');
+const life1 = document.getElementById('life1');
+const life2 = document.getElementById('life2');
 
 // Qtd de Poder
 
@@ -27,10 +31,10 @@ const btn2 = document.querySelector('.btn2');
 
 // Div dos golpes
 
-const op1 = document.querySelector('.op1');
-const op2 = document.querySelector('.op2');
-const op3 = document.querySelector('.op3');
-const op4 = document.querySelector('.op4');
+// const op1 = document.querySelector('.op1');
+// const op2 = document.querySelector('.op2');
+// const op3 = document.querySelector('.op3');
+// const op4 = document.querySelector('.op4');
 
 // Nome dos Golpes
 
@@ -52,7 +56,66 @@ btn1.addEventListener('click', function(){
     audio.play();
 })
 
-// audio
+// funcoes
+
+function porcentagemVida (x, y) {
+    // x = vida total
+    // y = vida atual
+
+    porcentagem = y * 100 / x;
+    return porcentagem;
+}
+
+function classEdit() {
+    alerta.style.opacity = "1";
+    alerta.classList.add('fade-in-top');
+
+    setTimeout(function() {
+        alerta.classList.remove('fade-in-top');
+        alerta.classList.add('fade-out-top');
+    }, 3000)
+}
+
+function golpear1(x){
+    if(x == 0){
+        message.innerHTML = falas.fala1;
+        classEdit();
+    }
+
+    if(x == 1){
+        message.innerHTML = falas.fala2;
+        classEdit();
+        vida2 -= dano1;
+    }
+    ative();
+}
+
+function random(){
+    // return Math.floor(math.random(0, 3));
+    return 1;
+}
+
+function escolher(op){
+    inative();
+
+    switch (op) {
+        case 1:
+            golpear1(random());
+        break;
+
+        case 2:
+            console.log("golpe2")
+        break;
+
+        case 3:
+            console.log("golpe3")
+        break;
+
+        case 4:
+            console.log("golpe4")
+        break;
+    }
+}
 
 function inative() {
     select.style.gridTemplateAreas = '"inative"';
@@ -65,28 +128,29 @@ function inative() {
 }
 
 function ative() {
+    life1.innerHTML = `${vida1}HP`;
+    life2.innerHTML = `${vida2}HP`;
+    bar1.style.width = (porcentagemVida(vidatotal1, vida1)+"%")
+    bar2.style.width = (porcentagemVida(vidatotal2, vida2)+"%")
     select.style.gridTemplateAreas = '"op1 op2""op3 op4"';
     select.style.gridTemplateRows = '1fr 1fr';
     select.style.gridTemplateColumns = '1fr 1fr';
     select.innerHTML = `
-                <div class="op1">
+                <div class="op1" onclick="escolher(1)">
                     <div class="attack"><span id="g1"><span>${golpe1}</span></div>
                     <div class="damage"><span id="d1"><span>${dano1}DMG</span></div>
                 </div>
-                <div class="op2">
+                <div class="op2" onclick="escolher(2)">
                     <div class="attack"><span id="g2"><span>${golpe2}</span></div>
                     <div class="damage"><span id="d2"><span>${dano2}DMG</span></div>
                 </div>
-                <div class="op3">
+                <div class="op3" onclick="escolher(3)">
                     <div class="attack"><span id="g3"><span>${golpe3}</span></div>
                     <div class="damage"><span id="d3"><span>${dano3}DMG</span></div>
                 </div>
-                <div class="op4">
+                <div class="op4" onclick="escolher(4)">
                     <div class="attack"><span id="g4"><span>${golpe4}</span></div>
                     <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
                 </div>
                 `
 }
-
-ative();
-inative();

@@ -18,7 +18,8 @@ if (partes.length != 2) {
 
 // Dados jogador 1
 
-vida1 = {
+dados1 = {
+    nome: "Magnus Draco",
     vida: 1956
 }
 
@@ -49,7 +50,8 @@ ult1 = {
 
 // Dados jogador 2
 
-vida2 = {
+dados2 = {
+    nome: "Mr. Martino",
     vida: 1346
 }
 
@@ -80,11 +82,9 @@ ult2 = {
 
 // Array de objetos dos golpe do jogador 1
 
-const magnusDraco = [vida1, golpe1_1, golpe1_2, golpe1_3, golpe1_4, ult1];
+const magnusDraco = [dados1, golpe1_1, golpe1_2, golpe1_3, golpe1_4, ult1];
 
 // Array de objetos dos golpe do jogador 2
 
-const mrMartino = [vida2, golpe2_1, golpe2_2, golpe2_3, golpe2_4, ult2];
+const mrMartino = [dados2, golpe2_1, golpe2_2, golpe2_3, golpe2_4, ult2];
 
-console.log(magnusDraco);
-console.log(mrMartino);
