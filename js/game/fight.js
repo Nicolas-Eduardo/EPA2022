@@ -1,0 +1,8 @@
+function fight(){
+    ative();
+    
+    
+    
+}
+
+fight ();

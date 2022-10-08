@@ -19,3 +19,5 @@ function fadeOutEffect() {
 }
 
 animista
+
+toggle;
