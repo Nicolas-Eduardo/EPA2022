@@ -1,10 +1,30 @@
+// Botao de Poder
+
+const btn1 = document.querySelector('.btn1');
+
+// body
+
 const body = document.querySelector('body');
+
+// Imagens grandes dos jogadores
+
 const imgPer1 = document.getElementById('imgPer1');
 const imgPer2 = document.getElementById('imgPer2');
+
+// Imagens pequenas dos jogadores
+
 const reacaoPer1 = document.getElementById('reacaoPer1');
 const reacaoPer2 = document.getElementById('reacaoPer2');
-var x = 1;
+
+// Verificadores
+var verificaPer;
+var verificaPoder = false;
+
+// Audio
 const audio = document.getElementById('audio');
+
+// Emojis
+var emoji;
 
 // Caso Selecione o personagem 1
 
@@ -15,26 +35,43 @@ if (data.per == "per1") {
     reacaoPer1.setAttribute("src", "css/image/patoFrente.gif")
     reacaoPer2.setAttribute("src", "css/image/patoCosta.gif")
 
-    var nomeYou = magnusDraco[0].nome;
-    var nomeHe = mrMartino[0].nome;
-    var vida1 = magnusDraco[0].vida;
-    var vida2 = mrMartino[0].vida;
-    var vidatotal1 = magnusDraco[0].vida;
-    var vidatotal2 = mrMartino[0].vida;
-    
-    var golpe1 = magnusDraco[1].ataque;
-    var golpe2 = magnusDraco[2].ataque;
-    var golpe3= magnusDraco[3].ataque;
-    var golpe4 = magnusDraco[4].ataque;
-    var ult1 = magnusDraco[5].ataque;
+    verificaPer = true;
+    emoji = "🔥"
+    btn1.innerHTML = emoji;
 
-    var dano1 = magnusDraco[1].damage;
-    var dano2 = magnusDraco[2].damage;
-    var dano3= magnusDraco[3].damage;
-    var dano4 = magnusDraco[4].damage;
-    var ult2 = magnusDraco[5].damage;
-    console.log(vida1)
-    console.log(vida2)
+    // Seus dados
+
+    var nomeYou = magnusDraco.nome;
+    var vida1 = magnusDraco.vida;
+    var vidatotal1 = magnusDraco.vida;
+
+    var golpe1 = magnusDraco.golpe1.ataque;
+    var golpe2 = magnusDraco.golpe2.ataque;
+    var golpe3 = magnusDraco.golpe3.ataque;
+    var golpe4 = magnusDraco.golpe4.ataque;
+
+    var dano1 = magnusDraco.golpe1.damage;
+    var dano2 = magnusDraco.golpe2.damage;
+    var dano3 = magnusDraco.golpe3.damage;
+    var dano4 = magnusDraco.golpe4.damage;
+
+    var ultNome1 = magnusDraco.ult.ataque;
+    var ultDano1 = magnusDraco.ult.damage;
+
+    // Dados dele
+
+    var nomeHe = mrMartino.nome;
+    var vida2 = mrMartino.vida;
+    var vidatotal2 = mrMartino.vida;
+
+    var dano1_2 = mrMartino.golpe1.damage;
+    var dano2_2 = mrMartino.golpe2.damage;
+    var dano3_2 = mrMartino.golpe3.damage;
+    var dano4_2 = mrMartino.golpe4.damage;
+
+    var ultDano1_2 = mrMartino.ult.damage;
+
+    
 }
 
 // Caso Selecione o personagem 2
@@ -45,24 +82,41 @@ else {
     reacaoPer2.setAttribute("src", "css/image/patoFrente.gif")
     reacaoPer1.setAttribute("src", "css/image/patoCosta.gif")
 
-    var vida1 = mrMartino[0].vida;
-    var vida2 = magnusDraco[0].vida;
-    var vidatotal1 = mrMartino[0].vida;
-    var vidatotal2 = magnusDraco[0].vida;
-    var nomeYou = mrMartino[0].nome;
-    var nomeHe = magnusDraco[0].nome;
-    
-    var golpe1 = mrMartino[1].ataque;
-    var golpe2 = mrMartino[2].ataque;
-    var golpe3= mrMartino[3].ataque;
-    var golpe4 = mrMartino[4].ataque;
-    var ult1 = mrMartino[5].ataque;
+    verificaPer = false;
+    emoji = "🔫"
+    btn1.innerHTML = emoji;
 
-    var dano1 = mrMartino[1].damage;
-    var dano2 = mrMartino[2].damage;
-    var dano3= mrMartino[3].damage;
-    var dano4 = mrMartino[4].damage;
-    var ult2 = mrMartino[5].damage;
+     // Seus dados
+
+     var nomeYou = mrMartino.nome;
+     var vida1 = mrMartino.vida;
+     var vidatotal1 = mrMartino.vida;
+ 
+     var golpe1 = mrMartino.golpe1.ataque;
+     var golpe2 = mrMartino.golpe2.ataque;
+     var golpe3 = mrMartino.golpe3.ataque;
+     var golpe4 = mrMartino.golpe4.ataque;
+ 
+     var dano1 = mrMartino.golpe1.damage;
+     var dano2 = mrMartino.golpe2.damage;
+     var dano3 = mrMartino.golpe3.damage;
+     var dano4 = mrMartino.golpe4.damage;
+ 
+     var ultNome1 = mrMartino.ult.ataque;
+     var ultDano1 = mrMartino.ult.damage;
+ 
+     // Dados dele
+ 
+     var nomeHe = magnusDraco.nome;
+     var vida2 = magnusDraco.vida;
+     var vidatotal2 = magnusDraco.vida;
+ 
+     var dano1_2 = magnusDraco.golpe1.damage;
+     var dano2_2 = magnusDraco.golpe2.damage;
+     var dano3_2 = magnusDraco.golpe3.damage;
+     var dano4_2 = magnusDraco.golpe4.damage;
+ 
+     var ultDano1_2 = magnusDraco.ult.damage;
 }
 
 if (data.cenario == "cenario1") {
@@ -77,10 +131,10 @@ else {
     body.style.backgroundImage = "url('css/image/cenario4_1.gif')";
     audio.setAttribute('src', 'files/Space Ship.mp3');
 
-    setInterval(function(){
+    setInterval(function () {
         body.style.backgroundImage = "url('css/image/cenario4_2.gif')";
 
-        setTimeout(function(){
+        setTimeout(function () {
             body.style.backgroundImage = "url('css/image/cenario4_1.gif')";
         }, 5000)
     }, 10000)
@@ -89,8 +143,63 @@ else {
 // Objeto de falas
 
 const falas = {
-    fala1: `${nomeHe} desviou`,
-    fala2: `${nomeYou} usou ${golpe1}`
+    magnusDraco: {
+        desviou: `Magnus Draco desviou`,
+
+        golpes1: {
+            fala1: `Magnus Draco usou Machadada Letal`,
+            fala2: `Magnus Draco usou Machadada Letal critico!!!`,
+        },
+
+        golpes2: {
+            fala1: `Magnus Draco usou Mordida`,
+            fala2: `Magnus Draco usou Mordida critico!!!`,
+        },
+
+        golpes3: {
+            fala1: `Magnus Draco usou Corte aéreo`,
+            fala2: `Magnus Draco usou Corte aéreo critico!!!`,
+        },
+
+        golpes4: {
+            fala1: `Magnus Draco usou Cabeçada`,
+            fala2: `Magnus Draco usou Cabeçada critico!!!`,
+        },
+
+        ult: {
+            fala1: `Magnus Draco ultou`,
+            fala2: `TA PEGANDO FOGO BICHO!!!`,
+        }
+    },
+
+    mrMartino: {
+        desviou: `Mr. Martino desviou`,
+
+        golpes1: {
+            fala1: `Mr. Martino usou Neuralaser`,
+            fala2: `Mr. Martino usou Neuralaser critico!!!`,
+        },
+
+        golpes2: {
+            fala1: `Mr. Martino usou Chuva de tiros`,
+            fala2: `Mr. Martino usou Chuva de tiros critico!!!`,
+        },
+
+        golpes3: {
+            fala1: `Mr. Martino usou Mr. Time`,
+            fala2: `Mr. Martino usou Mr. Time critico!!!`,
+        },
+
+        golpes4: {
+            fala1: `Mr. Martino usou Cartola Giratoria`,
+            fala2: `Mr. Martino usou Cartola Giratoria critico!!!`,
+        },
+
+        ult: {
+            fala1: `Mr. Martino ultou`,
+            fala2: `HASTA LA VISTA, BABY`,
+        }
+    }
 }
 
 

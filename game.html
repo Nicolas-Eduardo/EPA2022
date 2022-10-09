@@ -8,6 +8,7 @@
     <script src="js/game/dados.js" defer></script>
     <script src="js/game/selecao.js" defer></script>
     <script src="js/game/functions.js" defer></script>
+    <script src="js/game/functionsGolpes.js"></script>
     <script src="js/game/fight.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,9 +47,9 @@
                 </div>
                 <div class="ult1">
                     <div class="w3-light-grey w3-round">
-                        <div class="w3-container w3-orange w3-round power1" style="width:25%">POWER</div>
+                        <div class="w3-container w3-orange w3-round power1" style="width:100%">POWER</div>
                     </div>
-                    <button class="w3-button w3-medium w3-circle w3-black btn1">🧨</button>
+                    <button class="w3-button w3-medium w3-circle w3-black btn1" onclick="ult1()" disabled>🧨</button>
                 </div>
             </div>
 
@@ -69,7 +70,6 @@
                     <div class="w3-light-grey w3-round">
                         <div class="w3-container w3-orange w3-round power2" style="width:25%">POWER</div>
                     </div>
-                    <button class="w3-button w3-medium w3-circle w3-black btn2">🧨</button>
                 </div>
             </div>
         </footer>

@@ -1,5 +1,6 @@
 // 
 var porcentagem;
+var z;
 
 // Div do select
 const select = document.getElementById('select')
@@ -23,11 +24,6 @@ const life2 = document.getElementById('life2');
 const power1 = document.querySelector('.power1');
 const power2 = document.querySelector('.power2');
 
-// Botao de Poder
-
-const btn1 = document.querySelector('.btn1');
-const btn2 = document.querySelector('.btn2');
-
 // Div dos golpes
 
 // const op1 = document.querySelector('.op1');
@@ -49,17 +45,38 @@ const d2 = document.getElementById('d2');
 const d3 = document.getElementById('d3');
 const d4 = document.getElementById('d4');
 
+// Dano aumentado
+
+var danoCritico;
+
 // audio
 
-btn1.addEventListener('click', function(){
+btn1.addEventListener('click', function () {
     audio.play();
 })
 
-// funcoes
+// funções
+
+// Função que aumentará o dano
+
+function danoCritico(dano) {
+    let critico = Math.floor(Math.random() * 20 + 40);
+    let danoCritico = dano + critico;
+    return danoCritico;
+}
+
+// função que atualiza as vidas
+
+function atualizarVida() {
+    life1.innerHTML = `${vida1}HP`;
+    life2.innerHTML = `${vida2}HP`;
+    bar1.style.width = (porcentagemVida(vidatotal1, vida1) + "%")
+    bar2.style.width = (porcentagemVida(vidatotal2, vida2) + "%")
+}
 
 // Função para retornar porcentagem de vida dentro de 100% da atual
 
-function porcentagemVida (x, y) {
+function porcentagemVida(x, y) {
     // x = vida total
     // y = vida atual
 
@@ -71,58 +88,45 @@ function porcentagemVida (x, y) {
 
 function classEdit() {
     alerta.style.opacity = "1";
+    alerta.classList.remove('fade-out-top');
     alerta.classList.add('fade-in-top');
 
-    setTimeout(function() {
+    setTimeout(function () {
         alerta.classList.remove('fade-in-top');
         alerta.classList.add('fade-out-top');
     }, 3000)
 }
 
-// função caso escolha o golpe 1
-
-function golpear1(x){
-    if(x == 0){
-        message.innerHTML = falas.fala1;
-        classEdit();
-    }
-
-    if(x == 1){
-        message.innerHTML = falas.fala2;
-        classEdit();
-        vida2 -= dano1;
-    }
-    ative();
-}
 
 // função para retornar um número entre 0 e 10
 
-function random(){
-    // return Math.floor(math.random(0, 10));
-    return 1;
+function random() {
+    // z = número sorteado
+    z = Math.floor(Math.random() * 10);
+    return z;
 }
 
 // função que irá fazer o que cada golpe deve fazer (e também o começo de cada partida)
 
-function escolher(op){
+function escolher(op) {
     inative();
 
     switch (op) {
         case 1:
-            golpear1(random());
-        break;
+            golpear1(random(), 1);
+            break;
 
         case 2:
-            console.log("golpe2")
-        break;
+            golpear2(random(), 1);
+            break;
 
         case 3:
-            console.log("golpe3")
-        break;
+            golpear3(random(), 1);
+            break;
 
         case 4:
-            console.log("golpe4")
-        break;
+            golpear4(random(), 1);
+            break;
     }
 }
 
@@ -141,29 +145,29 @@ function inative() {
 // função que deixa a caixa de golpes ativa, podendo escolher os golpes
 
 function ative() {
-    life1.innerHTML = `${vida1}HP`;
-    life2.innerHTML = `${vida2}HP`;
-    bar1.style.width = (porcentagemVida(vidatotal1, vida1)+"%")
-    bar2.style.width = (porcentagemVida(vidatotal2, vida2)+"%")
+    atualizarVida();
     select.style.gridTemplateAreas = '"op1 op2""op3 op4"';
     select.style.gridTemplateRows = '1fr 1fr';
     select.style.gridTemplateColumns = '1fr 1fr';
     select.innerHTML = `
-                <div class="op1" onclick="escolher(1)">
-                    <div class="attack"><span id="g1"><span>${golpe1}</span></div>
-                    <div class="damage"><span id="d1"><span>${dano1}DMG</span></div>
-                </div>
-                <div class="op2" onclick="escolher(2)">
-                    <div class="attack"><span id="g2"><span>${golpe2}</span></div>
-                    <div class="damage"><span id="d2"><span>${dano2}DMG</span></div>
-                </div>
-                <div class="op3" onclick="escolher(3)">
-                    <div class="attack"><span id="g3"><span>${golpe3}</span></div>
-                    <div class="damage"><span id="d3"><span>${dano3}DMG</span></div>
-                </div>
-                <div class="op4" onclick="escolher(4)">
-                    <div class="attack"><span id="g4"><span>${golpe4}</span></div>
-                    <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
-                </div>
-                `
+        <div class="op1" onclick="escolher(1)">
+            <div class="attack"><span id="g1"><span>${golpe1}</span></div>
+            <div class="damage"><span id="d1"><span>${dano1}DMG</span></div>
+        </div>
+        <div class="op2" onclick="escolher(2)">
+            <div class="attack"><span id="g2"><span>${golpe2}</span></div>
+            <div class="damage"><span id="d2"><span>${dano2}DMG</span></div>
+        </div>
+        <div class="op3" onclick="escolher(3)">
+            <div class="attack"><span id="g3"><span>${golpe3}</span></div>
+            <div class="damage"><span id="d3"><span>${dano3}DMG</span></div>
+        </div>
+        <div class="op4" onclick="escolher(4)">
+            <div class="attack"><span id="g4"><span>${golpe4}</span></div>
+            <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
+        </div>
+    `;
+    if (verificaPoder == true) {
+        btn1.removeAttribute("disabled");
+    };
 }
