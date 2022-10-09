@@ -77,8 +77,8 @@ else {
 
         setTimeout(function(){
             body.style.backgroundImage = "url('css/image/cenario4_1.gif')";
-        }, 30000)
-    }, 30000)
+        }, 5000)
+    }, 10000)
 };
 
 // Objeto de falas

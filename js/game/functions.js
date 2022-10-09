@@ -1,5 +1,4 @@
 // 
-
 var porcentagem;
 
 // Div do select
@@ -58,6 +57,8 @@ btn1.addEventListener('click', function(){
 
 // funcoes
 
+// Função para retornar porcentagem de vida dentro de 100% da atual
+
 function porcentagemVida (x, y) {
     // x = vida total
     // y = vida atual
@@ -65,6 +66,8 @@ function porcentagemVida (x, y) {
     porcentagem = y * 100 / x;
     return porcentagem;
 }
+
+// função para fazer aparecer e desaparecer a caixa superior de texto em 3 segundos
 
 function classEdit() {
     alerta.style.opacity = "1";
@@ -75,6 +78,8 @@ function classEdit() {
         alerta.classList.add('fade-out-top');
     }, 3000)
 }
+
+// função caso escolha o golpe 1
 
 function golpear1(x){
     if(x == 0){
@@ -90,10 +95,14 @@ function golpear1(x){
     ative();
 }
 
+// função para retornar um número entre 0 e 10
+
 function random(){
-    // return Math.floor(math.random(0, 3));
+    // return Math.floor(math.random(0, 10));
     return 1;
 }
+
+// função que irá fazer o que cada golpe deve fazer (e também o começo de cada partida)
 
 function escolher(op){
     inative();
@@ -117,6 +126,8 @@ function escolher(op){
     }
 }
 
+// função que deixa a caixa de golpes como inativa, sem chance de escolher
+
 function inative() {
     select.style.gridTemplateAreas = '"inative"';
     select.style.gridTemplateRows = '1fr';
@@ -126,6 +137,8 @@ function inative() {
     <p>AGUARDE...</p>
     </div>`;
 }
+
+// função que deixa a caixa de golpes ativa, podendo escolher os golpes
 
 function ative() {
     life1.innerHTML = `${vida1}HP`;
