@@ -17,6 +17,7 @@ const reacaoPer1 = document.getElementById('reacaoPer1');
 const reacaoPer2 = document.getElementById('reacaoPer2');
 
 // Verificadores
+
 var verificaPer;
 var verificaPoder = false;
 var verificaJogador;
@@ -25,6 +26,7 @@ var verificaJogador;
 const audio = document.getElementById('audio');
 
 // Emojis
+
 var emoji;
 
 // Caso Selecione o personagem 1
@@ -137,8 +139,8 @@ else {
 
         setTimeout(function () {
             body.style.backgroundImage = "url('css/image/cenario4_1.gif')";
-        }, 5000)
-    }, 10000)
+        }, 15000)
+    }, 30000)
 };
 
 // Objeto de falas

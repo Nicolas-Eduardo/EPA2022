@@ -1,11 +1,17 @@
-// 
+//  Porcentagem do width baseado na vida dos jogadores
+
 var porcentagem;
+
+// Numero randomico da chance de jogada
+
 var z;
 
 // Div do select
+
 const select = document.getElementById('select')
 
-// Element.classList.remove(.classe);
+// Caixa de mensagens;
+
 const alerta = document.querySelector('.alerta');
 const message = document.getElementById('message');
 
