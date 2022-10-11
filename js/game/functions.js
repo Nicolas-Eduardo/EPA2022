@@ -24,13 +24,6 @@ const life2 = document.getElementById('life2');
 const power1 = document.querySelector('.power1');
 const power2 = document.querySelector('.power2');
 
-// Div dos golpes
-
-// const op1 = document.querySelector('.op1');
-// const op2 = document.querySelector('.op2');
-// const op3 = document.querySelector('.op3');
-// const op4 = document.querySelector('.op4');
-
 // Nome dos Golpes
 
 const g1 = document.getElementById('g1');
@@ -56,6 +49,48 @@ btn1.addEventListener('click', function () {
 })
 
 // funções
+
+// Funções que filtra a vida dos jogares
+
+    // jogador 1
+
+    function filtra1() {
+        if (vida1 <= 0) {
+            vida1 = 0;
+        }
+    }
+
+    // jogador 2
+
+    function filtra2() {
+        if (vida2 <= 0) {
+            vida2 = 0;
+        }
+    }
+
+// Função que escolhe o poder do inimigo
+
+function golpeInimigo() {
+    verificaJogador = true;
+    let golpeInimigo = Math.floor(Math.random()*4)
+    switch(golpeInimigo) {
+        case 0:
+            golpear1(random(), 0)
+        break;
+        
+        case 1:
+            golpear2(random(), 0)
+        break;
+
+        case 2:
+            golpear3(random(), 0)
+        break;
+
+        case 3:
+            golpear4(random(), 0)
+        break;
+    }
+}
 
 // Função que aumentará o dano
 
@@ -94,7 +129,11 @@ function classEdit() {
     setTimeout(function () {
         alerta.classList.remove('fade-in-top');
         alerta.classList.add('fade-out-top');
-    }, 3000)
+
+        setTimeout(function(){
+            game();
+        }, 1000)
+    }, 2000)
 }
 
 
@@ -138,13 +177,14 @@ function inative() {
     select.style.gridTemplateColumns = '1fr';
     select.innerHTML = `
     <div class="inative">
-    <p>AGUARDE...</p>
+        <p">AGUARDE...</p>
     </div>`;
 }
 
 // função que deixa a caixa de golpes ativa, podendo escolher os golpes
 
 function ative() {
+    verificaJogador = false;
     atualizarVida();
     select.style.gridTemplateAreas = '"op1 op2""op3 op4"';
     select.style.gridTemplateRows = '1fr 1fr';

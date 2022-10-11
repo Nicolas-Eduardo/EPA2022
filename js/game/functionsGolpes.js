@@ -4,8 +4,8 @@
 
 function golpear1(x, y) {
     if (x <= 2) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
             }
             else {
@@ -13,12 +13,20 @@ function golpear1(x, y) {
             }
             classEdit();
         }
-
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.magnusDraco.desviou;
+            }
+            else {
+                message.innerHTML = falas.mrMartino.desviou;
+            }
+            classEdit();
+        }
     }
 
     else if (x >= 3 && x <= 8) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes1.fala1;
             }
             else {
@@ -26,20 +34,46 @@ function golpear1(x, y) {
             }
             classEdit();
             vida2 -= dano1;
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes1.fala1;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes1.fala1;
+            }
+            classEdit();
+            vida1 -= dano1_2;
+            filtra1();
             atualizarVida();
         }
 
     }
     else {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes1.fala2;
             }
             else {
                 message.innerHTML = falas.mrMartino.golpes1.fala2;
             }
             classEdit();
-            vida2 -= danoCritico(dano1)
+            vida2 -= danoCritico(dano1);
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes1.fala2;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes1.fala2;
+            }
+            classEdit();
+            vida1 -= danoCritico(dano1_2);
+            filtra1();
             atualizarVida();
         }
 
@@ -50,8 +84,8 @@ function golpear1(x, y) {
 
 function golpear2(x, y) {
     if (x <= 2) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
             }
             else {
@@ -59,12 +93,21 @@ function golpear2(x, y) {
             }
             classEdit();
         }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.magnusDraco.desviou;
+            }
+            else {
+                message.innerHTML = falas.mrMartino.desviou;
+            }
+            classEdit();
+        }
 
     }
 
     else if (x >= 3 && x <= 8) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes2.fala1;
             }
             else {
@@ -72,13 +115,26 @@ function golpear2(x, y) {
             }
             classEdit();
             vida2 -= dano2;
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes2.fala1;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes2.fala1;
+            }
+            classEdit();
+            vida1 -= dano2_2;
+            filtra1();
             atualizarVida();
         }
 
     }
     else {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes2.fala2;
             }
             else {
@@ -86,6 +142,19 @@ function golpear2(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano2)
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes2.fala2;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes2.fala2;
+            }
+            classEdit();
+            vida1 -= danoCritico(dano2_2)
+            filtra1();
             atualizarVida();
         }
 
@@ -97,8 +166,8 @@ function golpear2(x, y) {
 
 function golpear3(x, y) {
     if (x <= 2) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
             }
             else {
@@ -106,12 +175,21 @@ function golpear3(x, y) {
             }
             classEdit();
         }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.magnusDraco.desviou;
+            }
+            else {
+                message.innerHTML = falas.mrMartino.desviou;
+            }
+            classEdit();
+        }
 
     }
 
     else if (x >= 3 && x <= 8) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes3.fala1;
             }
             else {
@@ -119,13 +197,26 @@ function golpear3(x, y) {
             }
             classEdit();
             vida2 -= dano3;
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes3.fala1;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes3.fala1;
+            }
+            classEdit();
+            vida1 -= dano3_2;
+            filtra1();
             atualizarVida();
         }
 
     }
     else {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes3.fala2;
             }
             else {
@@ -133,6 +224,19 @@ function golpear3(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano3)
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes3.fala2;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes3.fala2;
+            }
+            classEdit();
+            vida1 -= danoCritico(dano3_2)
+            filtra1();
             atualizarVida();
         }
 
@@ -144,8 +248,8 @@ function golpear3(x, y) {
 
 function golpear4(x, y) {
     if (x <= 2) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
             }
             else {
@@ -153,12 +257,21 @@ function golpear4(x, y) {
             }
             classEdit();
         }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.magnusDraco.desviou;
+            }
+            else {
+                message.innerHTML = falas.mrMartino.desviou;
+            }
+            classEdit();
+        }
 
     }
 
     else if (x >= 3 && x <= 8) {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes4.fala1;
             }
             else {
@@ -166,13 +279,26 @@ function golpear4(x, y) {
             }
             classEdit();
             vida2 -= dano4;
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes4.fala1;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes4.fala1;
+            }
+            classEdit();
+            vida1 -= dano4_2;
+            filtra1();
             atualizarVida();
         }
 
     }
     else {
-        if (y = 1) {
-            if (verificaPer = true) {
+        if (y == 1) {
+            if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes4.fala2;
             }
             else {
@@ -180,26 +306,49 @@ function golpear4(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano4)
+            filtra2();
+            atualizarVida();
+        }
+        else {
+            if (verificaPer == true) {
+                message.innerHTML = falas.mrMartino.golpes4.fala2;
+            }
+            else {
+                message.innerHTML = falas.magnusDraco.golpes4.fala2;
+            }
+            classEdit();
+            vida1 -= danoCritico(dano4_2)
+            filtra1()
             atualizarVida();
         }
 
     }
 }
 
-function ult1() {
-    if (verificaPer = true) {
-        message.innerHTML = falas.magnusDraco.ult.fala2;
+function ult(y) {
+    if (y == 1) {
+        if (verificaPer == true) {
+            message.innerHTML = falas.magnusDraco.ult.fala2;
+        }
+        else {
+            message.innerHTML = falas.mrMartino.ult.fala2
+        }
+        classEdit();
+        vida2 -= ultDano1;
+        filtra2()
+        atualizarVida();
     }
     else {
-        message.innerHTML = falas.mrMartino.ult.fala2
+        if (verificaPer == true) {
+            message.innerHTML = falas.mrMartino.ult.fala2;
+        }
+        else {
+            message.innerHTML = falas.magnusDraco.ult.fala2
+        }
+        classEdit();
+        vida1 -= ultDano1_2;
+        filtra1();
+        atualizarVida();
     }
-    classEdit();
-    vida2 -= ultDano1;
-    atualizarVida();
 }
-
-// FUNÇÕES DO JOGADOR 2
-
-
-
 

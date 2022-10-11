@@ -19,6 +19,7 @@ const reacaoPer2 = document.getElementById('reacaoPer2');
 // Verificadores
 var verificaPer;
 var verificaPoder = false;
+var verificaJogador;
 
 // Audio
 const audio = document.getElementById('audio');
