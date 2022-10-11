@@ -72,7 +72,7 @@ btn1.addEventListener('click', function () {
 
 function golpeInimigo() {
     verificaJogador = true;
-    let golpeInimigo = Math.floor(Math.random()*4)
+    let golpeInimigo = Math.floor(Math.random()*5)
     switch(golpeInimigo) {
         case 0:
             golpear1(random(), 0)
@@ -88,6 +88,10 @@ function golpeInimigo() {
 
         case 3:
             golpear4(random(), 0)
+        break;
+        
+        case 4:
+            ult(0);
         break;
     }
 }

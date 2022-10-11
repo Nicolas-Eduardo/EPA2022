@@ -327,6 +327,7 @@ function golpear4(x, y) {
 
 function ult(y) {
     if (y == 1) {
+        inative();
         if (verificaPer == true) {
             message.innerHTML = falas.magnusDraco.ult.fala2;
         }
