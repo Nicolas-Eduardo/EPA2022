@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Ultimate</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        table {
+            margin-right: 100px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            outline: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <table id="table1">
+            <tr>
+                <th colspan="3">Magnus Draco</th>
+            </tr>
+            <tr>
+                <th>Divisão</th>
+                <th>Soma</th>
+                <th>Contador</th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container2">
+        <table id="table2">
+            <tr>
+                <th colspan="3">Mr. Martino</th>
+            </tr>
+            <tr>
+                <th>Divisão</th>
+                <th>Soma</th>
+                <th>Contador</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    const table1 = document.getElementById('table1')
+    const table2 = document.getElementById('table2')
+    const golpes = {
+        golpes1: {
+            golpe1: 178,
+            golpe2: 68,
+            golpe3: 145,
+            golpe4: 98
+        },
+        golpes2: {
+            golpe1: 197,
+            golpe2: 236,
+            golpe3: 140,
+            golpe4: 172
+        }
+    }
+
+    // Estou em dúvida entre dividir por 2 ou 3, pois não sei quantas vezes que dura um jogo kkkkkkkk
+    // Mas podem tentar mudar os divisores ou o total da ult (por mais que eu gostei assim)
+    // Vou salvar essas variaveis porque é a forma que eu achei balançeado, mas podem mudar
+
+    // DIOGO:
+    
+    // var divisao1;
+    // var soma1 = 0;
+    // var cont1 = 0;
+    // const divisor1 = 3;
+    // const ult1 = 400;
+    // var divisao2;
+    // var soma2 = 0;
+    // var cont2 = 0;
+    // const divisor2 = 3;
+    // const ult2 = 650;
+
+    var divisao1;
+    var soma1 = 0;
+    var cont1 = 0;
+    const divisor1 = 3;
+    const ult1 = 400;
+
+    var divisao2;
+    var soma2 = 0;
+    var cont2 = 0;
+    const divisor2 = 3;
+    const ult2 = 650;
+
+    
+    
+    var aleatorio;
+
+    do {
+        aleatorio = Math.floor(Math.random() * 4);
+        switch (aleatorio) {
+            case 0:
+                divisao1 = golpes.golpes1.golpe1 / divisor1;
+                soma1 += divisao1;
+                break;
+
+            case 1:
+                divisao1 = golpes.golpes1.golpe2 / divisor1;
+                soma1 += divisao1;
+                break;
+
+            case 2:
+                divisao1 = golpes.golpes1.golpe3 / divisor1;
+                soma1 += divisao1;
+                break;
+
+            case 3:
+                divisao1 = golpes.golpes1.golpe4 / divisor1;
+                soma1 += divisao1;
+                break;
+        }
+        cont1++;
+        table1.innerHTML += `
+        <tr>
+            <td>${divisao1.toFixed(0)}</td>
+            <td>${soma1.toFixed(0)}</td>
+            <td>${cont1.toFixed(0)}</td>
+        </tr>
+        `
+    } while (soma1 <= ult1)
+
+
+
+    do {
+        aleatorio = Math.floor(Math.random() * 4);
+        switch (aleatorio) {
+            case 0:
+                divisao2 = golpes.golpes2.golpe1 / divisor2;
+                soma2 += divisao2;
+                break;
+
+            case 1:
+                divisao2 = golpes.golpes2.golpe2 / divisor2;
+                soma2 += divisao2;
+                break;
+
+            case 2:
+                divisao2 = golpes.golpes2.golpe3 / divisor2;
+                soma2 += divisao2;
+                break;
+
+            case 3:
+                divisao2 = golpes.golpes2.golpe4 / divisor2;
+                soma2 += divisao2;
+                break;
+        }
+        cont2++;
+        table2.innerHTML += `
+        <tr>
+            <td>${divisao2.toFixed(0)}</td>
+            <td>${soma2.toFixed(0)}</td>
+            <td>${cont2.toFixed(0)}</td>
+        </tr>
+        `
+    } while (soma2 <= ult2)
+
+</script>
+
+</html>
