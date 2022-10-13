@@ -164,6 +164,16 @@ function atualizarVida() {
     life2.innerHTML = `${vida2}HP`;
     bar1.style.width = (porcentagemVida(vidatotal1, vida1) + "%")
     bar2.style.width = (porcentagemVida(vidatotal2, vida2) + "%")
+
+    if (vida1 <= vida25_1) {
+        bar1.classList.remove('w3-green');
+        bar1.classList.add('w3-red');
+    }
+
+    if (vida2 <= vida25_2) {
+        bar2.classList.remove('w3-green');
+        bar2.classList.add('w3-red');
+    }
 }
 
 // Função para retornar porcentagem de vida dentro de 100% da atual

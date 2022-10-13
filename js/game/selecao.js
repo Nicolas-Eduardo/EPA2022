@@ -53,6 +53,7 @@ if (data.per == "per1") {
     var nomeYou = magnusDraco.nome;
     var vida1 = magnusDraco.vida;
     var vidatotal1 = magnusDraco.vida;
+    var vida25_1 = 489;
 
     var golpe1 = magnusDraco.golpe1.ataque;
     var golpe2 = magnusDraco.golpe2.ataque;
@@ -73,6 +74,7 @@ if (data.per == "per1") {
     var nomeHe = mrMartino.nome;
     var vida2 = mrMartino.vida;
     var vidatotal2 = mrMartino.vida;
+    var vida25_2 = 336;
 
     var dano1_2 = mrMartino.golpe1.damage;
     var dano2_2 = mrMartino.golpe2.damage;
@@ -102,6 +104,7 @@ else {
      var nomeYou = mrMartino.nome;
      var vida1 = mrMartino.vida;
      var vidatotal1 = mrMartino.vida;
+     var vida25_1 = 336;
  
      var golpe1 = mrMartino.golpe1.ataque;
      var golpe2 = mrMartino.golpe2.ataque;
@@ -122,6 +125,8 @@ else {
      var nomeHe = magnusDraco.nome;
      var vida2 = magnusDraco.vida;
      var vidatotal2 = magnusDraco.vida;
+     var vida25_2 = 489;
+     
  
      var dano1_2 = magnusDraco.golpe1.damage;
      var dano2_2 = magnusDraco.golpe2.damage;
