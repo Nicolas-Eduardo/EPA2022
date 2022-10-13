@@ -70,7 +70,7 @@ _______________________________________________
 Ideias gerais:
 
 Botão start pisca pisca;
-Diminuir personagem na seleção;
+Diminuir personagem na seleção; - **** FEITO ****
 
 ________________________________________________
 

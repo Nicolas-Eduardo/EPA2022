@@ -57,8 +57,22 @@ header {
 main {
     grid-area: main;
     display: flex;
-    justify-content: space-around;
+}
+
+.p1, .p2 {
+    height: 100%;
+    width: 33%;
+    display: flex;
     align-items: flex-end;
+    justify-content: center;
+}
+
+.cronometro {
+    height: 100%;
+    width: 33%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 #cronometro {
