@@ -37,7 +37,8 @@ const magnusDraco = {
     },
     ult: {
         ataque: "Ta pegando fogo bicho",
-        damage: 254
+        damage: 254,
+        total: 300
     }
 }
 
@@ -64,7 +65,8 @@ const mrMartino = {
     },
     ult: {
         ataque: "Hasta la vista, baby",
-        damage: 418
+        damage: 418,
+        total: 200
     }
 }
 

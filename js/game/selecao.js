@@ -19,7 +19,6 @@ const reacaoPer2 = document.getElementById('reacaoPer2');
 // Verificadores
 
 var verificaPer;
-var verificaPoder = false;
 var verificaJogador;
 
 // Audio
@@ -28,6 +27,13 @@ const audio = document.getElementById('audio');
 // Emojis
 
 var emoji;
+
+// Dados Ultimate
+
+const divisor = 3;
+var somaUlt1 = 0;
+var somaUlt2 = 0;
+
 
 // Caso Selecione o personagem 1
 
@@ -60,6 +66,7 @@ if (data.per == "per1") {
 
     var ultNome1 = magnusDraco.ult.ataque;
     var ultDano1 = magnusDraco.ult.damage;
+    var ultTotal1 = magnusDraco.ult.total;
 
     // Dados dele
 
@@ -73,6 +80,7 @@ if (data.per == "per1") {
     var dano4_2 = mrMartino.golpe4.damage;
 
     var ultDano1_2 = mrMartino.ult.damage;
+    var ultTotal1_2 = mrMartino.ult.total;
 
     
 }
@@ -107,6 +115,7 @@ else {
  
      var ultNome1 = mrMartino.ult.ataque;
      var ultDano1 = mrMartino.ult.damage;
+     var ultTotal1 = mrMartino.ult.total;
  
      // Dados dele
  
@@ -120,6 +129,8 @@ else {
      var dano4_2 = magnusDraco.golpe4.damage;
  
      var ultDano1_2 = magnusDraco.ult.damage;
+     var ultTotal1_2 = magnusDraco.ult.total;
+
 }
 
 if (data.cenario == "cenario1") {

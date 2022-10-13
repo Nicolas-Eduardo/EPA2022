@@ -61,6 +61,10 @@ main {
     align-items: flex-end;
 }
 
+#cronometro {
+    font-size: x-large;
+}
+
 footer {
     grid-area: footer;
     background-color: #a197a1;

@@ -8,7 +8,7 @@ var z;
 
 // Div do select
 
-const select = document.getElementById('select')
+const select = document.getElementById('select');
 
 // Caixa de mensagens;
 
@@ -44,6 +44,11 @@ const d2 = document.getElementById('d2');
 const d3 = document.getElementById('d3');
 const d4 = document.getElementById('d4');
 
+// Cronometro
+
+const cronometro = document.getElementById('cronometro');
+var contCronometro = 0
+
 // Dano aumentado
 
 var danoCritico;
@@ -55,6 +60,14 @@ btn1.addEventListener('click', function () {
 })
 
 // funções
+
+// Função do cronometro 
+function cronometragem() {
+    setInterval(function() {
+        contCronometro++;
+        cronometro.innerHTML = `TIME: ${contCronometro}s`
+    },1000)
+}
 
 // Funções que filtra a vida dos jogares
 
@@ -74,11 +87,41 @@ btn1.addEventListener('click', function () {
         }
     }
 
+// Função para gerar a ult
+
+function ultimate(dano, jogador) {
+    if (jogador == 1) {
+        somaUlt2 += dano / divisor;
+    }
+    else {
+        somaUlt1 += dano / divisor;
+    }
+}
+
+// Função para filtrar a ultimate
+
+function filtrarUlt (jogador) {
+    if (jogador == 1) {
+        if (somaUlt1 >= ultTotal1) {
+            somaUlt1 = ultTotal1;
+        }
+    }
+    else {
+        if (somaUlt2 >= ultTotal1_2) {
+            somaUlt2 = ultTotal1_2;
+        }
+    }
+}
+
 // Função que escolhe o poder do inimigo
 
 function golpeInimigo() {
     verificaJogador = true;
-    let golpeInimigo = Math.floor(Math.random()*5)
+    if (somaUlt2 == ultTotal1_2) {
+        ult(0);
+    }
+    else {
+        let golpeInimigo = Math.floor(Math.random()*4)
     switch(golpeInimigo) {
         case 0:
             golpear1(random(), 0)
@@ -95,10 +138,7 @@ function golpeInimigo() {
         case 3:
             golpear4(random(), 0)
         break;
-        
-        case 4:
-            ult(0);
-        break;
+    }
     }
 }
 
@@ -108,6 +148,13 @@ function danoCritico(dano) {
     let critico = Math.floor(Math.random() * 20 + 40);
     let danoCritico = dano + critico;
     return danoCritico;
+}
+
+// Função que atualiza o power
+
+function atualizarPower(){
+    power1.style.width = (porcentagemVida(ultTotal1, somaUlt1) + "%")
+    power2.style.width = (porcentagemVida(ultTotal1_2, somaUlt2) + "%")
 }
 
 // função que atualiza as vidas
@@ -122,11 +169,11 @@ function atualizarVida() {
 // Função para retornar porcentagem de vida dentro de 100% da atual
 
 function porcentagemVida(x, y) {
-    // x = vida total
-    // y = vida atual
+    // x = valor total
+    // y = valor atual
 
     porcentagem = y * 100 / x;
-    return porcentagem;
+    return porcentagem.toFixed(0);
 }
 
 // função para fazer aparecer e desaparecer a caixa superior de texto em 3 segundos
@@ -196,6 +243,7 @@ function inative() {
 function ative() {
     verificaJogador = false;
     atualizarVida();
+    atualizarPower();
     select.style.gridTemplateAreas = '"op1 op2""op3 op4"';
     select.style.gridTemplateRows = '1fr 1fr';
     select.style.gridTemplateColumns = '1fr 1fr';
@@ -217,7 +265,7 @@ function ative() {
             <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
         </div>
     `;
-    if (verificaPoder == true) {
+    if (somaUlt1 == ultTotal1) {
         btn1.removeAttribute("disabled");
     };
 }

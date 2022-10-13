@@ -35,7 +35,10 @@ function golpear1(x, y) {
             classEdit();
             vida2 -= dano1;
             filtra2();
+            ultimate(dano1, 1);
+            filtrarUlt(0);
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -46,8 +49,11 @@ function golpear1(x, y) {
             }
             classEdit();
             vida1 -= dano1_2;
+            ultimate(dano1_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -62,7 +68,10 @@ function golpear1(x, y) {
             classEdit();
             vida2 -= danoCritico(dano1);
             filtra2();
+            ultimate(dano1, 1);
+            filtrarUlt(0);
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -73,8 +82,11 @@ function golpear1(x, y) {
             }
             classEdit();
             vida1 -= danoCritico(dano1_2);
+            ultimate(dano1_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -116,7 +128,10 @@ function golpear2(x, y) {
             classEdit();
             vida2 -= dano2;
             filtra2();
+            ultimate(dano2, 1);
+            filtrarUlt(0);
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -127,8 +142,11 @@ function golpear2(x, y) {
             }
             classEdit();
             vida1 -= dano2_2;
+            ultimate(dano2_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower();
         }
 
     }
@@ -142,8 +160,11 @@ function golpear2(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano2)
+            ultimate(dano2, 1);
+            filtrarUlt(0);
             filtra2();
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -154,8 +175,11 @@ function golpear2(x, y) {
             }
             classEdit();
             vida1 -= danoCritico(dano2_2)
+            ultimate(dano2_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -197,8 +221,11 @@ function golpear3(x, y) {
             }
             classEdit();
             vida2 -= dano3;
+            ultimate(dano3, 1);
+            filtrarUlt(0);
             filtra2();
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -209,8 +236,11 @@ function golpear3(x, y) {
             }
             classEdit();
             vida1 -= dano3_2;
+            ultimate(dano3_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -224,8 +254,11 @@ function golpear3(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano3)
+            ultimate(dano3, 1);
+            filtrarUlt(0);
             filtra2();
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -236,8 +269,11 @@ function golpear3(x, y) {
             }
             classEdit();
             vida1 -= danoCritico(dano3_2)
+            ultimate(dano3_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -279,8 +315,11 @@ function golpear4(x, y) {
             }
             classEdit();
             vida2 -= dano4;
+            ultimate(dano4, 1);
+            filtrarUlt(0);
             filtra2();
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -291,8 +330,11 @@ function golpear4(x, y) {
             }
             classEdit();
             vida1 -= dano4_2;
+            ultimate(dano4_2, 0);
+            filtrarUlt(1);
             filtra1();
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -306,8 +348,11 @@ function golpear4(x, y) {
             }
             classEdit();
             vida2 -= danoCritico(dano4)
+            ultimate(dano4, 1);
+            filtrarUlt(0);
             filtra2();
             atualizarVida();
+            atualizarPower()
         }
         else {
             if (verificaPer == true) {
@@ -318,8 +363,11 @@ function golpear4(x, y) {
             }
             classEdit();
             vida1 -= danoCritico(dano4_2)
+            ultimate(dano4_2, 0);
+            filtrarUlt(1);
             filtra1()
             atualizarVida();
+            atualizarPower()
         }
 
     }
@@ -336,8 +384,11 @@ function ult(y) {
         }
         classEdit();
         vida2 -= ultDano1;
+        somaUlt1 = 0;
+        btn1.setAttribute("disabled");
         filtra2()
         atualizarVida();
+        atualizarPower()
     }
     else {
         if (verificaPer == true) {
@@ -348,8 +399,10 @@ function ult(y) {
         }
         classEdit();
         vida1 -= ultDano1_2;
+        somaUlt2 = 0;
         filtra1();
         atualizarVida();
+        atualizarPower()
     }
 }
 
