@@ -11,6 +11,7 @@ function golpear1(x, y) {
             else {
                 message.innerHTML = falas.magnusDraco.desviou;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
         }
         else {
@@ -32,6 +33,7 @@ function golpear1(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes1.fala1;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= dano1;
             filtra2();
@@ -65,6 +67,7 @@ function golpear1(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes1.fala2;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= danoCritico(dano1);
             filtra2();
@@ -103,6 +106,7 @@ function golpear2(x, y) {
             else {
                 message.innerHTML = falas.magnusDraco.desviou;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
         }
         else {
@@ -125,6 +129,7 @@ function golpear2(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes2.fala1;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= dano2;
             filtra2();
@@ -158,6 +163,7 @@ function golpear2(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes2.fala2;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= danoCritico(dano2)
             ultimate(dano2, 1);
@@ -198,6 +204,7 @@ function golpear3(x, y) {
                 message.innerHTML = falas.magnusDraco.desviou;
             }
             classEdit();
+            btn1.setAttribute("disabled", "disabled");
         }
         else {
             if (verificaPer == true) {
@@ -219,6 +226,7 @@ function golpear3(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes3.fala1;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= dano3;
             ultimate(dano3, 1);
@@ -252,6 +260,7 @@ function golpear3(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes3.fala2;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= danoCritico(dano3)
             ultimate(dano3, 1);
@@ -291,6 +300,7 @@ function golpear4(x, y) {
             else {
                 message.innerHTML = falas.magnusDraco.desviou;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
         }
         else {
@@ -313,6 +323,7 @@ function golpear4(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes4.fala1;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= dano4;
             ultimate(dano4, 1);
@@ -346,6 +357,7 @@ function golpear4(x, y) {
             else {
                 message.innerHTML = falas.mrMartino.golpes4.fala2;
             }
+            btn1.setAttribute("disabled", "disabled");
             classEdit();
             vida2 -= danoCritico(dano4)
             ultimate(dano4, 1);
@@ -382,10 +394,10 @@ function ult(y) {
         else {
             message.innerHTML = falas.mrMartino.ult.fala2
         }
+        btn1.setAttribute("disabled", "disabled");
         classEdit();
         vida2 -= ultDano1;
         somaUlt1 = 0;
-        btn1.setAttribute("disabled");
         filtra2()
         atualizarVida();
         atualizarPower()
