@@ -19,6 +19,8 @@ Não mostrar que você perdeu, e sim mostrar que o inimigo ganhou, como MK (Mens
 Tipo pokemon quando ganha;
 
 NICOLAS:
+Concordo com as ideias do Kevin;
+Mas acho legal aparecer uma mensagem diferente caso morra de ult;
 
 VINICIUS:
 
@@ -35,6 +37,8 @@ Vida abaixo de 25%;
 Pressionar os golpes em certa ordem;
 
 Nicolas:
+Gostei das ideias do Diogo;
+Mas Seria interessante Implementar as ideias do Kevin como um EsterEgg;
 
 Vinicius:
 
