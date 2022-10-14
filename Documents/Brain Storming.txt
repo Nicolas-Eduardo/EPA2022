@@ -23,6 +23,7 @@ Concordo com as ideias do Kevin;
 Mas acho legal aparecer uma mensagem diferente caso morra de ult;
 
 VINICIUS:
+Concordo com o Diogo e com a idéia do Diogo;
 
 _______________________________________
 
@@ -41,7 +42,7 @@ Gostei das ideias do Diogo;
 Mas Seria interessante Implementar as ideias do Kevin como um EsterEgg;
 
 Vinicius:
-
+Concordo com o Nicolas;
 ____________________________________
 
 Tela de inicio:
@@ -56,18 +57,16 @@ Uma tela de loading, que quando termine, apareça um botão que comece o jogo e 
 Nicolas:
 
 Vinicius:
-
+Gostei da idéia do Kevin
 ___________________________________________
 
 Ranking
 
-Diogo/Kevin:
+Diogo/Kevin/Vinícius:
 Estilo arcade (Pac Man, Space Invader, etc)
 posição, nome, tempo;
 
 Nicolas:
-
-Vinicius:
 
 _______________________________________________
 
