@@ -3,6 +3,10 @@ function game() {
         pararTempo();
         if (vida1 == 0) {
             inative();
+            document.querySelector('.inative').innerHTML = `VOCÊ PERDEU`;
+            setTimeout(function(){
+                window.location.href = "index.html";
+            }, 2000)
         }
         else {
             inative();
