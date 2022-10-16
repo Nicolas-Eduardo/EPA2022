@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js" defer></script>
+    <script src="js/localStorage.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,13 @@
 </head>
 
 <body>
+    <article>
+        <p class="textRanking">RANKING:</p>
+        <div id="ranking">
+
+        </div>
+    </article>
+
     <main>
         <img src="css/image/logo.svg" alt="#">
 
@@ -19,11 +27,15 @@
         <button id="button">►</button>
     </main>
 
+    <aside>
+
+    </aside>
+
     <audio src="files/Opening.mp3" id="audio" autoplay loop></audio>
 
 </body>
 <script>
-    
+
     const audio = document.getElementById('audio');
     const btn = document.querySelector('#button');
 
