@@ -223,10 +223,24 @@ footer {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 4px groove #5a595989;
     font-size: xx-large;
+}
+
+.inative p {
+    font-size: x-large;
+}
+
+#nomeJogador {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inative p, #nomeJogador, #enviarRanking {
+    margin-bottom: 1rem;
 }
 
 #life1, #life2 {
@@ -234,3 +248,44 @@ footer {
     font-size: xx-small;
 }
 
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #515152;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #000000;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}

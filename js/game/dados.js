@@ -1,4 +1,5 @@
-
+const index = false;
+const jogo = true;
 
 var query = location.search.slice(1);
 var partes = query.split('&');
@@ -21,7 +22,7 @@ const magnusDraco = {
     vida: 1956,
     golpe1: {
         ataque: "Machadada Letal",
-        damage: 178
+        damage: 1346
     },
     golpe2: {
         ataque: "Mordida",

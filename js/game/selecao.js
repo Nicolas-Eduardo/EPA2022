@@ -34,6 +34,8 @@ const divisor = 3;
 var somaUlt1 = 0;
 var somaUlt2 = 0;
 
+let start;
+
 
 // Caso Selecione o personagem 1
 

@@ -53,39 +53,42 @@ var contCronometro = 0
 
 var danoCritico;
 
-// audio
-
-btn1.addEventListener('click', function () {
-    audio.play();
-})
-
 // funções
 
-// Função do cronometro 
+// Funções do cronometro 
+// Mestre cronometro
 function cronometragem() {
-    setInterval(function() {
-        contCronometro++;
-        cronometro.innerHTML = `TIME: ${contCronometro}s`
-    },1000)
+    start = setInterval(() => { subirTempo(); }, 1000);
+}
+
+// Rodar o tempo
+function subirTempo() {
+    contCronometro++;
+    cronometro.innerHTML = `TIME: ${contCronometro}s`
+}
+
+// Parar o tempo
+function pararTempo() {
+    clearInterval(start)
 }
 
 // Funções que filtra a vida dos jogares
 
-    // jogador 1
+// jogador 1
 
-    function filtra1() {
-        if (vida1 <= 0) {
-            vida1 = 0;
-        }
+function filtra1() {
+    if (vida1 <= 0) {
+        vida1 = 0;
     }
+}
 
-    // jogador 2
+// jogador 2
 
-    function filtra2() {
-        if (vida2 <= 0) {
-            vida2 = 0;
-        }
+function filtra2() {
+    if (vida2 <= 0) {
+        vida2 = 0;
     }
+}
 
 // Função para gerar a ult
 
@@ -100,7 +103,7 @@ function ultimate(dano, jogador) {
 
 // Função para filtrar a ultimate
 
-function filtrarUlt (jogador) {
+function filtrarUlt(jogador) {
     if (jogador == 1) {
         if (somaUlt1 >= ultTotal1) {
             somaUlt1 = ultTotal1;
@@ -121,24 +124,24 @@ function golpeInimigo() {
         ult(0);
     }
     else {
-        let golpeInimigo = Math.floor(Math.random()*4)
-    switch(golpeInimigo) {
-        case 0:
-            golpear1(random(), 0)
-        break;
-        
-        case 1:
-            golpear2(random(), 0)
-        break;
+        let golpeInimigo = Math.floor(Math.random() * 4)
+        switch (golpeInimigo) {
+            case 0:
+                golpear1(random(), 0)
+                break;
 
-        case 2:
-            golpear3(random(), 0)
-        break;
+            case 1:
+                golpear2(random(), 0)
+                break;
 
-        case 3:
-            golpear4(random(), 0)
-        break;
-    }
+            case 2:
+                golpear3(random(), 0)
+                break;
+
+            case 3:
+                golpear4(random(), 0)
+                break;
+        }
     }
 }
 
@@ -152,7 +155,7 @@ function danoCritico(dano) {
 
 // Função que atualiza o power
 
-function atualizarPower(){
+function atualizarPower() {
     power1.style.width = (porcentagemVida(ultTotal1, somaUlt1) + "%")
     power2.style.width = (porcentagemVida(ultTotal1_2, somaUlt2) + "%")
 }
@@ -186,9 +189,18 @@ function porcentagemVida(x, y) {
     return porcentagem.toFixed(0);
 }
 
+// Função para verificar se a partida acabou
+
+function verificarPartida() {
+    if (vida1 <= 0 || vida2 <= 0) {
+        pararTempo();
+    }
+}
+
 // função para fazer aparecer e desaparecer a caixa superior de texto em 3 segundos
 
 function classEdit() {
+    verificarPartida();
     alerta.style.opacity = "1";
     alerta.classList.remove('fade-out-top');
     alerta.classList.add('fade-in-top');
@@ -197,7 +209,7 @@ function classEdit() {
         alerta.classList.remove('fade-in-top');
         alerta.classList.add('fade-out-top');
 
-        setTimeout(function(){
+        setTimeout(function () {
             game();
         }, 1000)
     }, 2000)
@@ -275,7 +287,19 @@ function ative() {
             <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
         </div>
     `;
+
     if (somaUlt1 == ultTotal1) {
         btn1.removeAttribute("disabled");
     };
+}
+
+// Função para começar partida
+
+function play() {
+    audio.play();
+
+    ative();
+
+
+    cronometragem();
 }
