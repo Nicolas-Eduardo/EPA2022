@@ -11,8 +11,8 @@ let verificador = false;
 
 per1.addEventListener("click", function(){
     verificador = true;
-    select.innerHTML = '<img src="css/image/patoFrente.gif" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="50%"></img>';
-    enemy.innerHTML = '<img src="css/image/patoCosta.gif" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="50%"></img>';
+    select.innerHTML = '<img src="css/image/dragao.gif" alt="Não foi possivel carregar a imagem ;-;" width="96%" height="48%" id="player1"></img>';
+    enemy.innerHTML = '<img src="css/image/pato.gif" alt="Não foi possivel carregar a imagem ;-;" width="70%" height="55%"></img>';
     per1.style.border = '5px groove #5555FF';
     per2.style.border = '';
     audio.play();
@@ -20,8 +20,8 @@ per1.addEventListener("click", function(){
 
 per2.addEventListener("click", function(){
     verificador = true;
-    enemy.innerHTML = '<img src="css/image/patoCosta.gif" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="50%"></img>';
-    select.innerHTML = '<img src="css/image/patoFrente.gif" alt="Não foi possivel carregar a imagem ;-;" width="100%" height="50%"></img>';
+    select.innerHTML = '<img src="css/image/pato.gif" alt="Não foi possivel carregar a imagem ;-;" width="70%" height="55%" id="player1"></img>';
+    enemy.innerHTML = '<img src="css/image/dragao.gif" alt="Não foi possivel carregar a imagem ;-;" width="96%" height="48%"><img>';
     per2.style.border = '5px groove #5555FF'
     per1.style.border = ''
 })
