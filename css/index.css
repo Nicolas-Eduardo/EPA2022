@@ -24,33 +24,70 @@ body {
 article {
     height: 100%;
     width: 28%;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-article .textRanking {
-    font-size: x-large;
+table {
     margin-top: 3rem;
+    text-align: center;
+    padding: 1rem;
 }
 
-article #ranking {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    margin-top: 1rem;
+
+
+tr {
+    height: 40px;
+    font-size: larger;
 }
 
-article .posicoes {
-    width: 100%;
-    display: flex; 
-    justify-content: space-between;
-    margin-top: 1rem;
+th {
+    text-align: center;
+    width: 7rem;
 }
+
+.th1 {
+    color: #EF2A70;
+}
+
+.th2 {
+    color: #F3921F;
+}
+
+.th3 {
+    color: #C5D002;
+}
+
+.th4 {
+    color: #B4F912;
+}
+
+.th5 {
+    color: #169F00;
+}
+
+.th6 {
+    color: #4AF9B6;
+}
+
+.th7 {
+    color: #2ADBEA;
+}
+
+.th8 {
+    color: #1569C0;
+}
+
+.th9 {
+    color: #080DC9;
+}
+
+.th10 {
+    color: #6611A3;
+}
+
 
 
 
