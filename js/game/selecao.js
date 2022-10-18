@@ -40,11 +40,14 @@ let start;
 // Caso Selecione o personagem 1
 
 if (data.per == "per1") {
-    imgPer1.setAttribute("src", "css/image/patoFrente.gif")
-    imgPer2.setAttribute("src", "css/image/patoCosta.gif")
+    imgPer1.setAttribute("src", "css/image/dragao.gif")
+    imgPer2.setAttribute("src", "css/image/pato.gif")
 
-    reacaoPer1.setAttribute("src", "css/image/patoFrente.gif")
-    reacaoPer2.setAttribute("src", "css/image/patoCosta.gif")
+    imgPer2.style.width="275px"
+    imgPer2.style.height="450px"
+
+    reacaoPer1.setAttribute("src", "css/image/dragao.gif")
+    reacaoPer2.setAttribute("src", "css/image/pato.gif")
 
     verificaPer = true;
     emoji = "🔥"
@@ -92,10 +95,12 @@ if (data.per == "per1") {
 // Caso Selecione o personagem 2
 
 else {
-    imgPer1.setAttribute("src", "css/image/patoCosta.gif")
-    imgPer2.setAttribute("src", "css/image/patoFrente.gif")
-    reacaoPer2.setAttribute("src", "css/image/patoFrente.gif")
-    reacaoPer1.setAttribute("src", "css/image/patoCosta.gif")
+    imgPer1.setAttribute("src", "css/image/pato.gif")
+    imgPer2.setAttribute("src", "css/image/dragao.gif")
+    imgPer1.style.width="275px"
+    imgPer1.style.height="450px"
+    reacaoPer2.setAttribute("src", "css/image/dragao.gif")
+    reacaoPer1.setAttribute("src", "css/image/pato.gif")
 
     verificaPer = false;
     emoji = "🔫"
@@ -103,40 +108,40 @@ else {
 
      // Seus dados
 
-     var nomeYou = mrMartino.nome;
-     var vida1 = mrMartino.vida;
-     var vidatotal1 = mrMartino.vida;
-     var vida25_1 = 336;
- 
-     var golpe1 = mrMartino.golpe1.ataque;
-     var golpe2 = mrMartino.golpe2.ataque;
-     var golpe3 = mrMartino.golpe3.ataque;
-     var golpe4 = mrMartino.golpe4.ataque;
- 
-     var dano1 = mrMartino.golpe1.damage;
-     var dano2 = mrMartino.golpe2.damage;
-     var dano3 = mrMartino.golpe3.damage;
-     var dano4 = mrMartino.golpe4.damage;
- 
-     var ultNome1 = mrMartino.ult.ataque;
-     var ultDano1 = mrMartino.ult.damage;
-     var ultTotal1 = mrMartino.ult.total;
- 
+    var nomeYou = mrMartino.nome;
+    var vida1 = mrMartino.vida;
+    var vidatotal1 = mrMartino.vida;
+    var vida25_1 = 336;
+
+    var golpe1 = mrMartino.golpe1.ataque;
+    var golpe2 = mrMartino.golpe2.ataque;
+    var golpe3 = mrMartino.golpe3.ataque;
+    var golpe4 = mrMartino.golpe4.ataque;
+
+    var dano1 = mrMartino.golpe1.damage;
+    var dano2 = mrMartino.golpe2.damage;
+    var dano3 = mrMartino.golpe3.damage;
+    var dano4 = mrMartino.golpe4.damage;
+
+    var ultNome1 = mrMartino.ult.ataque;
+    var ultDano1 = mrMartino.ult.damage;
+    var ultTotal1 = mrMartino.ult.total;
+
      // Dados dele
- 
-     var nomeHe = magnusDraco.nome;
-     var vida2 = magnusDraco.vida;
-     var vidatotal2 = magnusDraco.vida;
-     var vida25_2 = 489;
-     
- 
-     var dano1_2 = magnusDraco.golpe1.damage;
-     var dano2_2 = magnusDraco.golpe2.damage;
-     var dano3_2 = magnusDraco.golpe3.damage;
-     var dano4_2 = magnusDraco.golpe4.damage;
- 
-     var ultDano1_2 = magnusDraco.ult.damage;
-     var ultTotal1_2 = magnusDraco.ult.total;
+
+    var nomeHe = magnusDraco.nome;
+    var vida2 = magnusDraco.vida;
+    var vidatotal2 = magnusDraco.vida;
+    var vida25_2 = 489;
+    
+
+    var dano1_2 = magnusDraco.golpe1.damage;
+    var dano2_2 = magnusDraco.golpe2.damage;
+    var dano3_2 = magnusDraco.golpe3.damage;
+    var dano4_2 = magnusDraco.golpe4.damage;
+
+    var ultDano1_2 = magnusDraco.ult.damage;
+    var ultTotal1_2 = magnusDraco.ult.total;
 
 }
 
