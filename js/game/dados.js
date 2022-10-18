@@ -22,7 +22,7 @@ const magnusDraco = {
     vida: 1956,
     golpe1: {
         ataque: "Machadada Letal",
-        damage: 1346
+        damage: 178
     },
     golpe2: {
         ataque: "Mordida",
