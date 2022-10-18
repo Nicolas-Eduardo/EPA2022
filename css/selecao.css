@@ -72,6 +72,10 @@ label {
     border: 5px solid transparent;
 }
 
+#player1 {
+    transform: scaleX(-1);
+}
+
 .per2 {
     grid-area: per2;
     /* background-color: black; */
