@@ -1,4 +1,6 @@
 // Fim simulação
+    
+
 
 var lsRanking = [];
 var nome;
@@ -8,16 +10,21 @@ if (index == true) {
     if (localStorage.lsRanking) {
         lsRanking = JSON.parse(localStorage.getItem('lsRanking'));
 
-        console.log(lsRanking)
-        console.log(lsRanking[0].nome)
+        if (lsRanking.length == 11) {
+            lsRanking.splice(10, 1);
+        }
 
-        lsRanking.forEach(function (xxx, x) {
-            ranking.innerHTML += `
-            <div class="posicoes">
-                <span class="posicao">${x + 1}.</span>
-                <span class="nome">${lsRanking[x].nome}</span>
-                <span class="tempo">${lsRanking[x].tempo}s</span>
-            </div>
+        lsRanking.sort(function (x, y) {
+            return x.tempo - y.tempo
+        })
+
+        lsRanking.forEach(function (ranking, x) {
+            table.innerHTML += `
+            <tr class="th${x+1}">
+                <th>${x+1}.</th>
+                <th>${ranking.nome}</th>
+                <th>${ranking.tempo}s</th>
+            </tr>
             `
         });
     }
