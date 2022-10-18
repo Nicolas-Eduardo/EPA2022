@@ -10,13 +10,13 @@ if (index == true) {
     if (localStorage.lsRanking) {
         lsRanking = JSON.parse(localStorage.getItem('lsRanking'));
 
-        if (lsRanking.length == 11) {
-            lsRanking.splice(10, 1);
-        }
-
         lsRanking.sort(function (x, y) {
             return x.tempo - y.tempo
         })
+
+        if (lsRanking.length == 11) {
+            lsRanking.splice(10, 1);
+        }
 
         lsRanking.forEach(function (ranking, x) {
             table.innerHTML += `
