@@ -143,6 +143,10 @@ footer {
     height: 90%;
 }
 
+#imgPer1, #reacaoPer1 {
+    transform: scaleX(-1);
+}
+
 #select {
     width: 60%;
     height: 100%;
