@@ -158,15 +158,13 @@ footer {
     grid-template-rows: 1fr 1fr;
 }
 
-/* #select {
-    width: 60%;
-    height: 100%;
-    display: grid;
-    grid-template-areas: 
-    "inative";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-} */
+.dadosGolpes{
+    padding-top: 10px;
+}
+
+.taxa {
+    padding: 2rem;
+}
 
 #reacaoPer1, #reacaoPer2 {
     border: 2px groove #5a595989;
