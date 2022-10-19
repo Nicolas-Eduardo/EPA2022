@@ -4,21 +4,21 @@ function game() {
         if (vida1 == 0) {
             inative();
             document.querySelector('.inative').innerHTML = `VOCÊ PERDEU`;
-            setTimeout(function(){
+            setTimeout(function () {
                 window.location.href = "index.html";
             }, 2000)
         }
         else {
             inative();
             document.querySelector('.inative').innerHTML = `VOCÊ VENCEU!!!`;
-            setTimeout(function(){
+            setTimeout(function () {
                 document.querySelector('.inative').innerHTML = `
                     <p>Digite seu nome:</p>
                     <input type="text" id="nomeJogador" maxlength="5">
                     <button type="button" id="enviarRanking" onclick="adicionarRanking()">Enviar</button>
                 `;
 
-            },3000)
+            }, 3000)
 
         }
     }

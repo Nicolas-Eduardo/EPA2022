@@ -3,7 +3,7 @@
 // função caso escolha o golpe 1
 
 function golpear1(x, y) {
-    if (x <= 2) {
+    if (x >= 0 && x <= 7) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
@@ -25,7 +25,7 @@ function golpear1(x, y) {
         }
     }
 
-    else if (x >= 3 && x <= 8) {
+    else if (x == 8) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes1.fala1;
@@ -98,7 +98,7 @@ function golpear1(x, y) {
 // função caso escolha o golpe 2
 
 function golpear2(x, y) {
-    if (x <= 2) {
+    if (x <= 4) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
@@ -121,7 +121,7 @@ function golpear2(x, y) {
 
     }
 
-    else if (x >= 3 && x <= 8) {
+    else if (x >= 5 && x <= 8) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes2.fala1;
@@ -292,7 +292,7 @@ function golpear3(x, y) {
 // função caso escolha o golpe 4
 
 function golpear4(x, y) {
-    if (x <= 2) {
+    if (x <= 1) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
@@ -315,7 +315,7 @@ function golpear4(x, y) {
 
     }
 
-    else if (x >= 3 && x <= 8) {
+    else if (x >= 2 && x <= 8) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes4.fala1;

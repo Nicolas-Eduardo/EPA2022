@@ -22,19 +22,23 @@ const magnusDraco = {
     vida: 1956,
     golpe1: {
         ataque: "Machadada Letal",
-        damage: 178
+        damage: 178,
+        taxa:'20%'
     },
     golpe2: {
-        ataque: "Mordida",
-        damage: 68
+        ataque: "Corte Aéreo",
+        damage: 145,
+        taxa: '50%'
     },
     golpe3: {
-        ataque: "Corte Aéreo",
-        damage: 145
+        ataque: "Cabeçada",
+        damage: 98,
+        taxa: '70%'
     },
     golpe4: {
-        ataque: "Cabeçada",
-        damage: 98
+        ataque: "Mordida",
+        damage: 68,
+        taxa:  '80%'
     },
     ult: {
         ataque: "Ta pegando fogo bicho",
@@ -49,20 +53,26 @@ const mrMartino = {
     nome: "Mr. Martino",
     vida: 1346,
     golpe1: {
-        ataque: "Neuralaser",
-        damage: 197
+        ataque: "Chuva de Tiros",
+        damage: 236,
+        taxa:'20%'
+        
     },
     golpe2: {
-        ataque: "Chuva de Tiros",
-        damage: 236
+        ataque: "Neuralaser",
+        damage: 197,
+        taxa: '50%'
     },
     golpe3: {
-        ataque: "Mr.Time",
-        damage: 140
+        ataque: "Cartola Giratoria",
+        damage: 172,
+        taxa: '70%'
+        
     },
     golpe4: {
-        ataque: "Cartola Giratoria",
-        damage: 172
+        ataque: "Mr.Time",
+        damage: 140,
+        taxa: '80%'
     },
     ult: {
         ataque: "Hasta la vista, baby",

@@ -272,19 +272,19 @@ function ative() {
     select.innerHTML = `
         <div class="op1" onclick="escolher(1)">
             <div class="attack"><span id="g1"><span>${golpe1}</span></div>
-            <div class="damage"><span id="d1"><span>${dano1}DMG</span></div>
+            <div class="damage"><span id="d1"><span class='dadosGolpes'>${dano1}DMG</span><span class='taxa dadosGolpes'>${taxa1} de acerto</span></div>
         </div>
         <div class="op2" onclick="escolher(2)">
             <div class="attack"><span id="g2"><span>${golpe2}</span></div>
-            <div class="damage"><span id="d2"><span>${dano2}DMG</span></div>
+            <div class="damage"><span id="d2"><span class='dadosGolpes'>${dano2}DMG</span><span class='taxa dadosGolpes'>${taxa2} de acerto</span></div>
         </div>
         <div class="op3" onclick="escolher(3)">
             <div class="attack"><span id="g3"><span>${golpe3}</span></div>
-            <div class="damage"><span id="d3"><span>${dano3}DMG</span></div>
+            <div class="damage"><span id="d3"><span class='dadosGolpes'>${dano3}DMG</span><span class='taxa dadosGolpes'>${taxa3} de acerto</span></div>
         </div>
         <div class="op4" onclick="escolher(4)">
             <div class="attack"><span id="g4"><span>${golpe4}</span></div>
-            <div class="damage"><span id="d4"><span>${dano4}DMG</span></div>
+            <div class="damage"><span id="d4"><span class='dadosGolpes'>${dano4}DMG</span><span class='taxa dadosGolpes'>${taxa4} de acerto</span></div>
         </div>
     `;
 

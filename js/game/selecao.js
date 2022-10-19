@@ -46,8 +46,8 @@ if (data.per == "per1") {
     imgPer2.style.width="275px"
     imgPer2.style.height="450px"
 
-    reacaoPer1.setAttribute("src", "css/image/dragao.gif")
-    reacaoPer2.setAttribute("src", "css/image/pato.gif")
+    reacaoPer1.setAttribute("src", "css/image/rostoDragao.gif")
+    reacaoPer2.setAttribute("src", "css/image/rostoPato.gif")
 
     verificaPer = true;
     emoji = "🔥"
@@ -69,6 +69,11 @@ if (data.per == "per1") {
     var dano2 = magnusDraco.golpe2.damage;
     var dano3 = magnusDraco.golpe3.damage;
     var dano4 = magnusDraco.golpe4.damage;
+
+    var taxa1 = magnusDraco.golpe1.taxa;
+    var taxa2 = magnusDraco.golpe2.taxa;
+    var taxa3 = magnusDraco.golpe3.taxa;
+    var taxa4 = magnusDraco.golpe4.taxa;
 
     var ultNome1 = magnusDraco.ult.ataque;
     var ultDano1 = magnusDraco.ult.damage;
@@ -99,8 +104,8 @@ else {
     imgPer2.setAttribute("src", "css/image/dragao.gif")
     imgPer1.style.width="275px"
     imgPer1.style.height="450px"
-    reacaoPer2.setAttribute("src", "css/image/dragao.gif")
-    reacaoPer1.setAttribute("src", "css/image/pato.gif")
+    reacaoPer2.setAttribute("src", "css/image/rostoDragao.gif")
+    reacaoPer1.setAttribute("src", "css/image/rostoPato.gif")
 
     verificaPer = false;
     emoji = "🔫"
@@ -122,6 +127,11 @@ else {
     var dano2 = mrMartino.golpe2.damage;
     var dano3 = mrMartino.golpe3.damage;
     var dano4 = mrMartino.golpe4.damage;
+
+    var taxa1 = mrMartino.golpe1.taxa;
+    var taxa2 = mrMartino.golpe2.taxa;
+    var taxa3 = mrMartino.golpe3.taxa;
+    var taxa4 = mrMartino.golpe4.taxa;
 
     var ultNome1 = mrMartino.ult.ataque;
     var ultDano1 = mrMartino.ult.damage;
