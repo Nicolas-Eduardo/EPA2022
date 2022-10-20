@@ -6,7 +6,7 @@ const carrossel = document.querySelector('.carrossel');
 const controles = document.querySelector('.controles');
 const btnComecar = document.querySelector('button');
 const footer = document.querySelector('footer');
-const audio = document.querySelector('#audio');
+const cen = document.querySelector('.cen')
 let verificador = false;
 
 per1.addEventListener("click", function(){
@@ -15,7 +15,6 @@ per1.addEventListener("click", function(){
     enemy.innerHTML = '<img src="css/image/pato.gif" alt="Não foi possivel carregar a imagem ;-;" width="70%" height="55%"></img>';
     per1.style.border = '5px groove #5555FF';
     per2.style.border = '';
-    audio.play();
 })
 
 per2.addEventListener("click", function(){
@@ -41,3 +40,7 @@ btnComecar.addEventListener("mouseenter", function(){
 btnComecar.addEventListener("mouseleave", function(){
     footer.style.backgroundColor = "#5555FF";
 })
+
+function adicionarBorda(){
+    cen.style.border = '5px groove #5555FF'
+}
