@@ -184,27 +184,28 @@ const falas = {
 
         golpes1: {
             fala1: `Magnus Draco usou Machadada Letal`,
-            fala2: `Magnus Draco usou Machadada Letal critico!!!`,
+            fala2: `Magnus Draco usou Machadada Letal critico!!!`
         },
 
         golpes2: {
-            fala1: `Magnus Draco usou Mordida`,
-            fala2: `Magnus Draco usou Mordida critico!!!`,
+            fala1: `Magnus Draco usou Corte aéreo`,
+            fala2: `Magnus Draco usou Corte aéreo critico!!!`
+            
         },
 
         golpes3: {
-            fala1: `Magnus Draco usou Corte aéreo`,
-            fala2: `Magnus Draco usou Corte aéreo critico!!!`,
+            fala1: `Magnus Draco usou Cabeçada`,
+            fala2: `Magnus Draco usou Cabeçada critico!!!`
         },
 
         golpes4: {
-            fala1: `Magnus Draco usou Cabeçada`,
-            fala2: `Magnus Draco usou Cabeçada critico!!!`,
+            fala1: `Magnus Draco usou Mordida`,
+            fala2: `Magnus Draco usou Mordida critico!!!`
         },
 
         ult: {
             fala1: `Magnus Draco ultou`,
-            fala2: `TA PEGANDO FOGO BICHO!!!`,
+            fala2: `TA PEGANDO FOGO BICHO!!!`
         }
     },
 
@@ -212,28 +213,28 @@ const falas = {
         desviou: `Mr. Martino desviou`,
 
         golpes1: {
-            fala1: `Mr. Martino usou Neuralaser`,
-            fala2: `Mr. Martino usou Neuralaser critico!!!`,
+            fala1: `Mr. Martino usou Chuva de tiros`,
+            fala2: `Mr. Martino usou Chuva de tiros critico!!!`
         },
 
         golpes2: {
-            fala1: `Mr. Martino usou Chuva de tiros`,
-            fala2: `Mr. Martino usou Chuva de tiros critico!!!`,
+            fala1: `Mr. Martino usou Neuralaser`,
+            fala2: `Mr. Martino usou Neuralaser critico!!!`
         },
 
         golpes3: {
-            fala1: `Mr. Martino usou Mr. Time`,
-            fala2: `Mr. Martino usou Mr. Time critico!!!`,
+            fala1: `Mr. Martino usou Cartola Giratoria`,
+            fala2: `Mr. Martino usou Cartola Giratoria critico!!!`
         },
 
         golpes4: {
-            fala1: `Mr. Martino usou Cartola Giratoria`,
-            fala2: `Mr. Martino usou Cartola Giratoria critico!!!`,
+            fala1: `Mr. Martino usou Mr. Time`,
+            fala2: `Mr. Martino usou Mr. Time critico!!!`
         },
 
         ult: {
             fala1: `Mr. Martino ultou`,
-            fala2: `HASTA LA VISTA, BABY`,
+            fala2: `HASTA LA VISTA, BABY`
         }
     }
 }
