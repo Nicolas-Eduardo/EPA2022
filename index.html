@@ -23,26 +23,13 @@
     <main>
         <img src="css/image/logo.svg" alt="#">
 
-        <a href="selecao.html"><button class="btn third">START</button></a>
-
-        <button id="button">►</button>
+        <button class="btn third" onclick="start()">START</button>
     </main>
 
     <aside>
-
+        <img src="css/image/play-fill.svg" alt="" width="60rem" height="60rem" id="musicButton" onclick="playMusic()">
     </aside>
 
     <audio src="files/Opening.mp3" id="audio" autoplay loop></audio>
-
 </body>
-<script>
-
-    const audio = document.getElementById('audio');
-    const btn = document.querySelector('#button');
-
-    btn.addEventListener("click", function () {
-        audio.play();
-    })
-</script>
-
 </html>
