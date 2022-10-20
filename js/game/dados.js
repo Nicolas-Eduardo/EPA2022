@@ -23,7 +23,7 @@ const magnusDraco = {
     golpe1: {
         ataque: "Machadada Letal",
         damage: 178,
-        taxa:'20%'
+        taxa:'30%'
     },
     golpe2: {
         ataque: "Corte Aéreo",
@@ -55,7 +55,7 @@ const mrMartino = {
     golpe1: {
         ataque: "Chuva de Tiros",
         damage: 236,
-        taxa:'20%'
+        taxa:'30%'
         
     },
     golpe2: {

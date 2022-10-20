@@ -3,7 +3,7 @@
 // função caso escolha o golpe 1
 
 function golpear1(x, y) {
-    if (x >= 0 && x <= 7) {
+    if (x <= 6) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.mrMartino.desviou;
@@ -25,7 +25,7 @@ function golpear1(x, y) {
         }
     }
 
-    else if (x == 8) {
+    else if (x >= 7 && x <= 8) {
         if (y == 1) {
             if (verificaPer == true) {
                 message.innerHTML = falas.magnusDraco.golpes1.fala1;
