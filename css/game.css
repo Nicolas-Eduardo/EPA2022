@@ -102,7 +102,7 @@ footer {
 
 .per1, .per2 {
     height: 50%;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +167,7 @@ footer {
 }
 
 #reacaoPer1, #reacaoPer2 {
-    border: 2px groove #5a595989;
+    outline: 4px groove #5a595989;
 }
 
 .op1 {

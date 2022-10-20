@@ -68,8 +68,7 @@ label {
 
 .per1 {
     grid-area: per1;
-    /* background-color: black; */
-    border: 5px solid transparent;
+    border: 5px groove transparent;
 }
 
 #player1 {
@@ -78,13 +77,12 @@ label {
 
 .per2 {
     grid-area: per2;
-    /* background-color: black; */
-    border: 5px solid transparent;
+    border: 5px groove transparent;
 }
 
 .cen {
     grid-area: cen;
-    /* background-color: black; */
+    border: 5px groove transparent;
 }
 
 .enemy { 
@@ -93,7 +91,6 @@ label {
     align-items: center;
     width: 25%;
     height: 100%;
-    /* background-color: black; */
 }
 
 /* Fim da parte Main */
@@ -190,3 +187,4 @@ div[class*=box] {
 	opacity: 0;	
 	transform: scale(0.1, 1);
 }
+
