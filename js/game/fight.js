@@ -14,7 +14,7 @@ function game() {
             setTimeout(function () {
                 document.querySelector('.inative').innerHTML = `
                     <p>Digite seu nome:</p>
-                    <input type="text" id="nomeJogador" maxlength="5">
+                    <input type="text" id="nomeJogador" maxlength="5" autocomplete="off">
                     <button type="button" id="enviarRanking" onclick="adicionarRanking()">Enviar</button>
                 `;
 

@@ -10,13 +10,7 @@ if (index == true) {
     if (localStorage.lsRanking) {
         lsRanking = JSON.parse(localStorage.getItem('lsRanking'));
 
-        lsRanking.sort(function (x, y) {
-            return x.tempo - y.tempo
-        })
-
-        if (lsRanking.length == 11) {
-            lsRanking.splice(10, 1);
-        }
+        console.log(lsRanking.length)
 
         lsRanking.forEach(function (ranking, x) {
             table.innerHTML += `
@@ -43,6 +37,14 @@ if (jogo == true) {
                 nome: document.getElementById('nomeJogador').value.toUpperCase(),
                 tempo: contCronometro
             })
+
+            lsRanking.sort(function (x, y) {
+                return x.tempo - y.tempo
+            })
+    
+            if (lsRanking.length >= 10) {
+                lsRanking.splice(10, 10);
+            }
 
             localStorage.clear(lsRanking);
 

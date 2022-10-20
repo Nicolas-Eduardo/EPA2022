@@ -65,6 +65,16 @@ function cronometragem() {
 function subirTempo() {
     contCronometro++;
     cronometro.innerHTML = `TIME: ${contCronometro}s`
+
+    if(contCronometro == 300) {
+        clearInterval(start)
+
+        inative();
+            document.querySelector('.inative').innerHTML = `TEMPO ACABOU`;
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 3000)
+    }
 }
 
 // Parar o tempo
