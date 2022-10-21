@@ -78,6 +78,11 @@ main {
 #cronometro {
     font-size: x-large;
     color: red;
+    text-shadow: 
+               -1px -1px 0px #FFF, 
+               -1px 1px 0px #FFF,                    
+                1px -1px 0px #FFF,                  
+                1px 0px 0px #FFF;
 }
 
 footer {

@@ -8,6 +8,7 @@ const btnComecar = document.querySelector('button');
 const footer = document.querySelector('footer');
 const cen = document.querySelector('.cen')
 let verificador = false;
+const audio = document.getElementById('audio')
 
 per1.addEventListener("click", function(){
     verificador = true;

@@ -49,6 +49,10 @@ main {
     /* outline: 1px solid black; */
 }
 
+.selection {
+    cursor: pointer;
+}
+
 .choice {
     width: 50%;
     height: 100%;
