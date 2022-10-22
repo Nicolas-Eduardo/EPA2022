@@ -13,7 +13,7 @@ function game() {
             document.querySelector('.inative').innerHTML = `VOCÊ VENCEU!!!`;
             setTimeout(function () {
                 document.querySelector('.inative').innerHTML = `
-                    <p>Digite seu nome:</p>
+                    <p>Digite seu Nick:</p>
                     <input type="text" id="nomeJogador" maxlength="5" autocomplete="off">
                     <button type="button" id="enviarRanking" onclick="adicionarRanking()">Enviar</button>
                 `;
