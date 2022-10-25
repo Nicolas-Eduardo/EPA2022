@@ -14,9 +14,17 @@ function game() {
             setTimeout(function () {
                 document.querySelector('.inative').innerHTML = `
                     <p>Digite seu Nick:</p>
-                    <input type="text" id="nomeJogador" maxlength="5" autocomplete="off">
+                    <input type="text" id="nomeJogador" maxlength="5" autocomplete="off" placeholder="5 dígitos">
                     <button type="button" id="enviarRanking" onclick="adicionarRanking()">Enviar</button>
                 `;
+
+                const btnEnviar = document.getElementById('enviarRanking')
+
+                document.addEventListener('keypress', function(e){
+                    if (e.key === 'Enter') {
+                        btnEnviar.click()
+                    }
+                })
 
             }, 3000)
 
