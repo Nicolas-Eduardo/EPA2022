@@ -37,8 +37,7 @@ const magnusDraco = {
     },
     golpe4: {
         ataque: "Mordida",
-        // damage: 68,
-        damage: 1346,
+        damage: 68,
         taxa:  '80%'
     },
     ult: {
