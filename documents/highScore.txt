@@ -1,0 +1,29 @@
+var lsRanking = [
+{nome: "MTS", tempo: 86},
+{nome: "LUCAS", tempo: 104},
+{nome: "RAQUE", tempo: 113},
+{nome: "KAL", tempo: 131},
+{nome: "FIDUS", tempo: 133},
+{nome: "RATAO", tempo: 133},
+{nome: "ALEX", tempo: 134},
+{nome: "ASTA", tempo: 139},
+{nome: "LARI", tempo: 145},
+{nome: "EMY", tempo: 147}
+]
+
+localStorage.lsRanking = JSON.stringify(lsRanking);
+
+var lsRanking = [
+{nome: "MTS", tempo: 85}
+{nome: "BLA", tempo: 106}
+{nome: "COIO", tempo: 116}
+{nome: "EUMM2", tempo: 117}
+{nome: "GBRMR", tempo: 128}
+{nome: "FELIP", tempo: 140}
+{nome: "NAGA1", tempo: 145}
+{nome: "BIA", tempo: 154}
+{nome: "LAVI", tempo: 155}
+{nome: "EUMSM", tempo: 176}
+]
+
+localStorage.lsRanking = JSON.stringify(lsRanking);

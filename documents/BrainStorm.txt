@@ -1,0 +1,80 @@
+BrainStorming Space Kombat:
+
+Dicas:
+Deixem seus votos abaixo de cada tema;
+Coloquem comentários no final caso precise.
+
+______________________________________
+
+Tema: tela de derrota ou vitoria
+
+KEVIN:
+Mission Complete estilo metal slug;
+You Win estilo atreet fighter;
+GTA V quando morre;
+Derrota LOL;
+
+DIOGO:
+Não mostrar que você perdeu, e sim mostrar que o inimigo ganhou, como MK (Mensagem diferente caso morra de ult);
+Tipo pokemon quando ganha;
+
+NICOLAS:
+Concordo com as ideias do Kevin;
+Mas acho legal aparecer uma mensagem diferente caso morra de ult;
+
+VINICIUS:
+Concordo com o Diogo e com a idéia do Diogo;
+
+_______________________________________
+
+Como liberar ult:
+
+Kevin:
+Digitar em ordem algo como um cheat;
+
+Diogo:
+Dividir o dano total, e acrescentar o resultado numa soma, até chegar ao valor necessario;
+Vida abaixo de 25%;
+Pressionar os golpes em certa ordem;
+
+Nicolas:
+Gostei das ideias do Diogo;
+Mas Seria interessante Implementar as ideias do Kevin como um EsterEgg;
+
+Vinicius:
+Concordo com o Nicolas;
+____________________________________
+
+Tela de inicio:
+
+Diogo:
+Botão escrito "começar" que ative o game e a musica;
+
+Kevin:
+Uma pagina entre selecao/game;
+Uma tela de loading, que quando termine, apareça um botão que comece o jogo e a música;
+
+Nicolas:
+
+Vinicius:
+Gostei da idéia do Kevin
+___________________________________________
+
+Ranking
+
+Diogo/Kevin/Vinícius:
+Estilo arcade (Pac Man, Space Invader, etc)
+posição, nome, tempo;
+
+Nicolas:
+
+_______________________________________________
+
+Ideias gerais:
+
+Botão start pisca pisca;
+Diminuir personagem na seleção; - **** FEITO ****
+
+________________________________________________
+
+                  COMENTÁRIOS
